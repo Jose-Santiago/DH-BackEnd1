@@ -1,0 +1,43 @@
+@startuml
+'https://plantuml.com/class-diagram
+Abstract class TemplateMenu{
+-precioBase: double
++abstract armarMenu(): String
++abstract calcularPrecio(): double
+}
+
+MenuClasico --u-> TemplateMenu
+
+class MenuClasico{
++armarMenu(): String
++calcularPrecio(): double
+}
+
+MenuInfantil --u-> TemplateMenu
+
+class MenuInfantil{
+-numeroJuguetes: Integer
++armarMenu(): String
++calcularPrecio(): double
+}
+
+MenuVegetariano--u-> TemplateMenu
+
+class MenuVegetariano{
+-numeroEspecias: Integer
+-numeroSalsas: Integer
++armarMenu(): String
++calcularPrecio(): double
+}
+
+TemplateMenu -u-> Empleado
+
+class Empleado{
+-nombre: String
+-List<TemplateMenu> paqueteMenu
++calcularPrecioPaquete(): double
++agregarMenu(TemplateMenu menu): void
++prepararMenu(TemplateMenu menu): String
+}
+
+@enduml
