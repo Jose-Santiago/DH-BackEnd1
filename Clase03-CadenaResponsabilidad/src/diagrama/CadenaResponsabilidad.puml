@@ -1,0 +1,51 @@
+@startuml
+'https://plantuml.com/class-diagram
+class Producto{
+-nombre: String
+-lote: Integer
+-envasado: String
+}
+
+ControlCalidad -l-> Producto
+
+abstract ControlCalidad{
+-controlCalidad: ControlCalidad
++SiguienteControlCalidad( ControlCalidad)
++abstract validarCalidadProducto(Producto producto)
+}
+
+ControlCalidadLote -u-> ControlCalidad
+
+class ControlCalidadLote{
+-sigControlCalidad: ControlCalidad
+
++SiguienteControlCalidad(ControlCalidad sigControlCalidad)
++validarCalidadProducto(Producto producto)
+}
+
+ControlCalidadPeso -u-> ControlCalidad
+
+class ControlCalidadPeso{
+-sigControlCalidad: ControlCalidad
+
++SiguienteControlCalidad(ControlCalidad sigControlCalidad)
++validarCalidadProducto(Producto producto)
+}
+
+ControlCalidadEnvase -u-> ControlCalidad
+
+class ControlCalidadEnvase{
+-sigControlCalidad: ControlCalidad
+
++SiguienteControlCalidad(ControlCalidad sigControlCalidad)
++validarCalidadProducto(Producto producto)
+}
+
+AnalistaCalidad -d-> ControlCalidad
+
+class AnalistaCalidad{
++ validarLote: ControlCalidadLote
++ validarPeso: ControlCalidadPeso
++validarEnvase: ControlCalidadEnvase
+}
+@enduml
