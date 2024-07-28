@@ -1,0 +1,40 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+class Usuario{
+-id: String
+-tipo: TipoUsuario
+
++getID(): String
++getTipo(): TipoUsuario
+}
+
+TipoUsuario -u-> Usuario
+
+enum TipoUsuario{
+-tipo: String
+}
+
+Usuario -l-> ServicioSpotifyPago
+
+interface ServicioSpotifyPago{
++descargarCancion(Usuario usuario): String
+}
+
+ServicioDescargaProxy .u.> ServicioSpotifyPago
+
+class ServicioDescargaProxy{
+-servicioDescarga: ServicioDescarga
+
+}
+
+ServicioDescargaProxy -r-> ServicioDescarga
+
+ServicioDescarga ..> ServicioSpotifyPago
+
+class ServicioDescarga{
++descargarCancion(Usuario usuario): String
+}
+
+
+@enduml
