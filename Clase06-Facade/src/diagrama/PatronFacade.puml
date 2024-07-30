@@ -1,0 +1,36 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+class APIVuelo{
+-fechaSalida: Date
+-fechaRegreso: Date
+-origen: String
+-destino: String
+
++busquedaVuelo(fechaSalida, fechaRegreso, origen, destino): void
+}
+
+APIHotel -u-> ServicioTurismo
+
+class APIHotel{
+-fechaEntrada: Date
+-fechaSalida: Date
+-ciudad: String
+
++busquedaHotel(fechaEntrada, fechaSalida, ciudad): void
+}
+
+APIVuelo -u-> ServicioTurismo
+
+class ServicioTurismo{
+-vuelo: APIVuelo
+-hotel: APIHotel
+
++busquedas(Date salida, Date regreso, String ciudad): void
+}
+
+ServicioTurismo -u-> IServicioTurismo
+
+interface IServicioTurismo{
++ busquedas(Date salida, Date regreso, String ciudad, String origen): void
+}
+@enduml
