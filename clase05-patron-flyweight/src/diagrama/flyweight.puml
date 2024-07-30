@@ -1,0 +1,24 @@
+@startuml
+'https://plantuml.com/class-diagram
+class Arbol{
+-alto: Integer
+-ancho: Integer
+-color: String
+-tipo: String
+}
+ArbolFactory<--> Arbol
+
+class Bosque{
++plantarArboles(Map arboles): void
++memoriaUtilizada(): void
+}
+
+ArbolFactory <--> Bosque
+class ArbolFactory{
+-bosque: Map<Arbol>
++getArbol(alto, ancho, color): Arbol
+}
+
+Main --> ArbolFactory
+class Main{}
+@enduml
