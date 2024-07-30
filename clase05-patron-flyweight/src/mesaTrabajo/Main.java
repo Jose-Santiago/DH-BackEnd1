@@ -10,15 +10,13 @@ public class Main {
             arbol.setAncho(400);
             arbol.setColor("verde");
             System.out.println("Creando el arbol numero: " + (i+1) +" del tipo: " + arbol.getTipo());
-        }
-        for (int i = 0; i < 50; i++) {
-            Arbol arbol = arboles.getArbol("frutal");
-            arbol.setAlto(500);
-            arbol.setAncho(300);
-            arbol.setColor("rojo");
-            System.out.println("Creando el arbol numero: " + (i+1) +" del tipo: " + arbol.getTipo());
-        }
 
+            Arbol arbolrojo = arboles.getArbol("frutal");
+            arbolrojo.setAlto(500);
+            arbolrojo.setAncho(300);
+            arbolrojo.setColor("rojo");
+            System.out.println("Creando el arbol numero: " + (i+1) +" del tipo: " + arbolrojo.getTipo());
+        }
         bosque.plantarArboles();
         bosque.MemoriaUtilizada();
     }

@@ -6,7 +6,7 @@ public class Bosque {
 
 
     public void plantarArboles(){
-        System.out.println("Plantando " + Arbol.getContador() + " Arboles");
+        System.out.println("Plantando " + Arbol.getContador() + " Tipos de Arboles");
     }
 
     public void MemoriaUtilizada(){
