@@ -11,3 +11,30 @@ java.lang.Throwable
 [2024-07-31 18:59:53] [ INFO ] [App:19] elemento agregado
 [2024-07-31 18:59:53] [ WARN ] [App:23] La lista tiene mas de 5: 6 Elementos
 [2024-07-31 18:59:53] [ INFO ] [App:42] EL promedio es: 2.0
+[2024-07-31 19:06:34] [ INFO ] [App:14] instancia creada
+[2024-07-31 19:06:34] [ ERROR] [App:36] La lista no tiene elementos
+java.lang.Throwable
+	at presencial.App.calcularPromedio(App.java:36)
+	at presencial.Cliente.main(Cliente.java:7)
+[2024-07-31 19:06:34] [ INFO ] [App:19] elemento agregado
+[2024-07-31 19:06:34] [ INFO ] [App:19] elemento agregado
+[2024-07-31 19:06:34] [ INFO ] [App:19] elemento agregado
+[2024-07-31 19:06:34] [ INFO ] [App:19] elemento agregado
+[2024-07-31 19:06:34] [ INFO ] [App:19] elemento agregado
+[2024-07-31 19:06:34] [ INFO ] [App:19] elemento agregado
+[2024-07-31 19:06:34] [ WARN ] [App:23] La lista tiene mas de 5: 6 Elementos
+[2024-07-31 19:06:34] [ INFO ] [App:42] EL promedio es: 2.0
+[2024-07-31 19:06:34] [ INFO ] [App:19] elemento agregado
+[2024-07-31 19:06:34] [ WARN ] [App:23] La lista tiene mas de 5: 7 Elementos
+[2024-07-31 19:06:34] [ INFO ] [App:19] elemento agregado
+[2024-07-31 19:06:34] [ WARN ] [App:23] La lista tiene mas de 5: 8 Elementos
+[2024-07-31 19:06:34] [ INFO ] [App:19] elemento agregado
+[2024-07-31 19:06:34] [ WARN ] [App:23] La lista tiene mas de 5: 9 Elementos
+[2024-07-31 19:06:34] [ INFO ] [App:19] elemento agregado
+[2024-07-31 19:06:34] [ WARN ] [App:23] La lista tiene mas de 5: 10 Elementos
+[2024-07-31 19:06:34] [ INFO ] [App:19] elemento agregado
+[2024-07-31 19:06:34] [ WARN ] [App:23] La lista tiene mas de 5: 11 Elementos
+[2024-07-31 19:06:34] [ WARN ] [App:27] La lista tiene mas de 10:  Actualmente contiene: 11 Elementos
+[2024-07-31 19:06:34] [ INFO ] [App:19] elemento agregado
+[2024-07-31 19:06:34] [ WARN ] [App:23] La lista tiene mas de 5: 12 Elementos
+[2024-07-31 19:06:34] [ WARN ] [App:27] La lista tiene mas de 10:  Actualmente contiene: 12 Elementos
