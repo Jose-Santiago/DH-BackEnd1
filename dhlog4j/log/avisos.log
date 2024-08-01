@@ -1,0 +1,13 @@
+[2024-07-30 21:23:55] [ WARN ] [Main:7] Prueba de WARN 
+[2024-07-30 21:23:55] [ DEBUG] [Main:8] Prueba de DEBUG log
+[2024-07-30 21:23:55] [ INFO ] [Main:9] Prueba LOG Info
+[2024-07-30 21:23:55] [ ERROR] [Main:10] El usuario es inavlido
+java.lang.Throwable: error exception in thread main
+	at Main.main(Main.java:10)
+[2024-07-30 21:26:16] [ INFO ] [Main:6] Empezamos nuestro metodo MAIN
+[2024-07-30 21:26:16] [ ERROR] [Main:11] Error por dividir por cero 
+java.lang.ArithmeticException: / by zero
+	at Main.main(Main.java:9)
+[2024-07-30 21:26:16] [ WARN ] [Main:13] Advertencia el metodo MAIN esta por finalizar
+[2024-07-30 21:26:16] [ DEBUG] [Main:14] Esto va a mostrarse solo si el infoLogger esta en DEBUG
+[2024-07-30 21:26:16] [ INFO ] [Main:15] Finalizamos el thread MAIN
