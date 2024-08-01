@@ -9,9 +9,9 @@ public class TestLog {
         Class.forName("org.h2.Driver").newInstance();
 
         // Conexión a la base de datos
-        Connection con = DriverManager.getConnection("jdbc:h2:~/Database/my", "sa", "");
+        Connection con = DriverManager.getConnection("jdbc:h2:mem:~/test", "sa", "");
 
-        // Crear una declaración
+        // Crear una declaración para comunicar objto con tablas
         Statement stmt = con.createStatement();
 
         // Código para crear una tabla. Elimina la tabla si esta ya existe y la vuelve a crear
@@ -27,6 +27,19 @@ public class TestLog {
         // Código para consultar todos los registros de la tabla TEST
         String sql = "SELECT * FROM TEST";
         ResultSet rd = stmt.executeQuery(sql);
+
+        // Código para recorrer el resultado de la consulta
+        while (rd.next()) {
+            System.out.println(rd.getInt(1) + " " + rd.getString(2));
+        }
+
+        // Código para crear una tabla. Elimina la tabla si esta ya existe y la vuelve a crear
+        createSql ="INSERT INTO TEST VALUES(3, 'prueba');\n" +
+                "INSERT INTO TEST VALUES(4, 'World');\n";
+        stmt.execute(createSql);
+
+        // Código para consultar todos los registros de la tabla TEST
+        rd = stmt.executeQuery(sql);
 
         // Código para recorrer el resultado de la consulta
         while (rd.next()) {
