@@ -2,10 +2,7 @@ package preparedStatement;
 
 import org.apache.log4j.Logger;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.Statement;
+import java.sql.*;
 
 public class Odontologo {
     //objeto para crear los logs de la clase
@@ -16,6 +13,8 @@ public class Odontologo {
             + "CREATE TABLE ODONTOLOGOS(ID INT PRIMARY KEY, NOMBRE VARCHAR(100) NOT NULL, APELLIDO VARCHAR(100) NOT NULL, MATRICULA VARCHAR(100) NOT NULL )";
     private static final String SQL_INSERT = "INSERT INTO ODONTOLOGOS VALUES (?,?,?,?)";
     private static final String SQL_UPDATE = "UPDATE ODONTOLOGOS SET MATRICULA = ? WHERE ID = ?";
+
+    private static final String SQL_READBD = "SELECT * FROM ODONTOLOGOS";
     // metodo principal
     public static void main(String[] args) {
         Connection connection = null;
@@ -41,6 +40,12 @@ public class Odontologo {
             pStInser.execute();
             logs.info("Datos Insertados con Exito");
 
+            //realizamos una consulta a la BD e imprimimos la informacion.
+            ResultSet rd = stmt.executeQuery(SQL_READBD);
+            while (rd.next()){
+                System.out.println("id: " + rd.getInt(1) + " Nombre: " + rd.getString(2) + " Apellido: " + rd.getString(3) + " Matricula: " + rd.getString(4));
+            }
+
             // Sentencia de Actualizacion
             PreparedStatement pStUpdate = connection.prepareStatement(SQL_UPDATE);
             pStUpdate.setString(1,"nuevaMatricual");
@@ -49,6 +54,11 @@ public class Odontologo {
             pStUpdate.execute();
             logs.info("Matricula Actualizada con Exito!!");
 
+            // consultamos los datos para verificar la actualziacion
+            rd = stmt.executeQuery(SQL_READBD);
+            while (rd.next()){
+                System.out.println("id: " + rd.getInt(1) + " Nombre: " + rd.getString(2) + " Apellido: " + rd.getString(3) + " Matricula: " + rd.getString(4));
+            }
 
         }catch (Exception err){
 
