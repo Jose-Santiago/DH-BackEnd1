@@ -60,12 +60,13 @@ public class Odontologo {
                 System.out.println("id: " + rd.getInt(1) + " Nombre: " + rd.getString(2) + " Apellido: " + rd.getString(3) + " Matricula: " + rd.getString(4));
             }
 
+            connection.close();
+            stmt.close();
+            rd.close();
+
         }catch (Exception err){
-
-        }finally {
-
+            logs.error(err.getMessage());
         }
-
     }
     //metodo para obtener la conexion
     public static Connection getConnection() throws Exception{

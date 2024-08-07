@@ -1,0 +1,32 @@
+[2024-08-07 01:15:08] [ INFO ] [ConnectionH2:24] Conexion a H2 exitosa.
+[2024-08-07 01:15:08] [ INFO ] [ConnectionH2:28] Tabla Medicamentos creada con exito
+[2024-08-07 01:15:08] [ INFO ] [ImplementacionMedicamentoDao:41] Medicamento guardado con exito
+[2024-08-07 01:15:08] [ INFO ] [ImplementacionMedicamentoDao:63] El medicamento encontrado por id: 1 es: ibuprofeno
+[2024-08-07 01:15:08] [ INFO ] [ImplementacionMedicamentoDao:113] Medicamento actualizado con exito
+[2024-08-07 01:15:08] [ INFO ] [ImplementacionMedicamentoDao:128] ID --- NOMBRE -------------- PRECIO ---------- CANTIDAD------
+[2024-08-07 01:15:08] [ ERROR] [ImplementacionMedicamentoDao:135] Column "PRECIO -------- 20" not found [42122-230]
+[2024-08-07 01:15:08] [ INFO ] [ImplementacionMedicamentoDao:63] El medicamento encontrado por id: 1 es: ibuprofeno
+[2024-08-07 01:15:08] [ INFO ] [ImplementacionMedicamentoDao:85] El medicamento a eliminar por id: 1 es: ibuprofeno
+[2024-08-07 01:15:08] [ INFO ] [ImplementacionMedicamentoDao:90] Medicamento eliminado con exito
+[2024-08-07 01:16:44] [ INFO ] [ConnectionH2:24] Conexion a H2 exitosa.
+[2024-08-07 01:16:44] [ INFO ] [ConnectionH2:28] Tabla Medicamentos creada con exito
+[2024-08-07 01:16:44] [ INFO ] [ImplementacionMedicamentoDao:41] Medicamento guardado con exito
+[2024-08-07 01:16:44] [ INFO ] [ImplementacionMedicamentoDao:63] El medicamento encontrado por id: 1 es: ibuprofeno
+[2024-08-07 01:16:44] [ INFO ] [ImplementacionMedicamentoDao:113] Medicamento actualizado con exito
+[2024-08-07 01:16:44] [ INFO ] [ImplementacionMedicamentoDao:128] ID --- NOMBRE -------------- PRECIO ---------- CANTIDAD------
+[2024-08-07 01:16:44] [ INFO ] [ImplementacionMedicamentoDao:131] 1 --- ibuprofeno ---------- 18.0 -------- 20
+[2024-08-07 01:16:44] [ INFO ] [ImplementacionMedicamentoDao:63] El medicamento encontrado por id: 1 es: ibuprofeno
+[2024-08-07 01:16:44] [ INFO ] [ImplementacionMedicamentoDao:85] El medicamento a eliminar por id: 1 es: ibuprofeno
+[2024-08-07 01:16:44] [ INFO ] [ImplementacionMedicamentoDao:90] Medicamento eliminado con exito
+[2024-08-07 01:18:10] [ INFO ] [ConnectionH2:24] Conexion a H2 exitosa.
+[2024-08-07 01:18:10] [ INFO ] [ConnectionH2:28] Tabla Medicamentos creada con exito
+[2024-08-07 01:18:10] [ INFO ] [ImplementacionMedicamentoDao:41] Medicamento guardado con exito
+[2024-08-07 01:18:10] [ INFO ] [ImplementacionMedicamentoDao:128] ID --- NOMBRE -------------- PRECIO ---------- CANTIDAD------
+[2024-08-07 01:18:10] [ INFO ] [ImplementacionMedicamentoDao:131] 1 --- ibuprofeno ---------- 10.0 -------- 100
+[2024-08-07 01:18:10] [ INFO ] [ImplementacionMedicamentoDao:63] El medicamento encontrado por id: 1 es: ibuprofeno
+[2024-08-07 01:18:10] [ INFO ] [ImplementacionMedicamentoDao:113] Medicamento actualizado con exito
+[2024-08-07 01:18:10] [ INFO ] [ImplementacionMedicamentoDao:128] ID --- NOMBRE -------------- PRECIO ---------- CANTIDAD------
+[2024-08-07 01:18:10] [ INFO ] [ImplementacionMedicamentoDao:131] 1 --- ibuprofeno ---------- 18.0 -------- 20
+[2024-08-07 01:18:10] [ INFO ] [ImplementacionMedicamentoDao:63] El medicamento encontrado por id: 1 es: ibuprofeno
+[2024-08-07 01:18:10] [ INFO ] [ImplementacionMedicamentoDao:85] El medicamento a eliminar por id: 1 es: ibuprofeno
+[2024-08-07 01:18:10] [ INFO ] [ImplementacionMedicamentoDao:90] Medicamento eliminado con exito
