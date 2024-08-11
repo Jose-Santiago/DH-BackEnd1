@@ -1,0 +1,107 @@
+2024-08-10 23:16:57 ERROR com.dh.evaluacion.dao.implementacion.ImpleOdontologoDAOH2 - Table "ODONTOLOGOS" not found (this database is empty); SQL statement:
+SELECT * FROM ODONTOLOGOS [42104-230]
+2024-08-10 23:16:57 INFO  com.dh.evaluacion.dao.BDH2 - Conexion a h2 establecida con exito
+2024-08-10 23:16:57 INFO  com.dh.evaluacion.dao.BDH2 - Tabla de Odontologos creada con exito
+2024-08-10 23:16:57 INFO  com.dh.evaluacion.dao.implementacion.ImpleOdontologoDAOH2 - Inciando operacion de guardado de un odontologo
+2024-08-10 23:16:57 INFO  com.dh.evaluacion.dao.implementacion.ImpleOdontologoDAOH2 - Datos de Odotologo guardados con Exito
+2024-08-10 23:16:57 INFO  com.dh.evaluacion.dao.implementacion.ImpleOdontologoDAOH2 - Inciando operacion de guardado de un odontologo
+2024-08-10 23:16:57 INFO  com.dh.evaluacion.dao.implementacion.ImpleOdontologoDAOH2 - Datos de Odotologo guardados con Exito
+2024-08-10 23:16:57 INFO  com.dh.evaluacion.dao.implementacion.ImpleOdontologoDAOH2 - Inciando operacion de guardado de un odontologo
+2024-08-10 23:16:57 INFO  com.dh.evaluacion.dao.implementacion.ImpleOdontologoDAOH2 - Datos de Odotologo guardados con Exito
+2024-08-10 23:16:57 INFO  com.dh.evaluacion.dao.implementacion.ImpleOdontologoDAOH2 - Inciando operacion de guardado de un odontologo
+2024-08-10 23:16:57 INFO  com.dh.evaluacion.dao.implementacion.ImpleOdontologoDAOH2 - Datos de Odotologo guardados con Exito
+2024-08-10 23:19:11 INFO  com.dh.evaluacion.dao.BDH2 - Conexion a h2 establecida con exito
+2024-08-10 23:19:11 INFO  com.dh.evaluacion.dao.BDH2 - Tabla de Odontologos creada con exito
+2024-08-10 23:19:11 INFO  com.dh.evaluacion.dao.implementacion.ImpleOdontologoDAOH2 - Obteniendo todos los Odontologos en la BD H2
+2024-08-10 23:19:11 INFO  com.dh.evaluacion.dao.BDH2 - Conexion a h2 establecida con exito
+2024-08-10 23:19:11 INFO  com.dh.evaluacion.dao.BDH2 - Tabla de Odontologos creada con exito
+2024-08-10 23:19:11 INFO  com.dh.evaluacion.dao.implementacion.ImpleOdontologoDAOH2 - Inciando operacion de guardado de un odontologo
+2024-08-10 23:19:11 INFO  com.dh.evaluacion.dao.implementacion.ImpleOdontologoDAOH2 - Datos de Odotologo guardados con Exito
+2024-08-10 23:19:11 INFO  com.dh.evaluacion.dao.implementacion.ImpleOdontologoDAOH2 - Inciando operacion de guardado de un odontologo
+2024-08-10 23:19:11 INFO  com.dh.evaluacion.dao.implementacion.ImpleOdontologoDAOH2 - Datos de Odotologo guardados con Exito
+2024-08-10 23:19:11 INFO  com.dh.evaluacion.dao.implementacion.ImpleOdontologoDAOH2 - Inciando operacion de guardado de un odontologo
+2024-08-10 23:19:11 INFO  com.dh.evaluacion.dao.implementacion.ImpleOdontologoDAOH2 - Datos de Odotologo guardados con Exito
+2024-08-10 23:19:11 INFO  com.dh.evaluacion.dao.implementacion.ImpleOdontologoDAOH2 - Inciando operacion de guardado de un odontologo
+2024-08-10 23:19:11 INFO  com.dh.evaluacion.dao.implementacion.ImpleOdontologoDAOH2 - Datos de Odotologo guardados con Exito
+2024-08-10 23:23:08 INFO  com.dh.evaluacion.dao.BDH2 - Conexion a h2 establecida con exito
+2024-08-10 23:23:08 INFO  com.dh.evaluacion.dao.BDH2 - Tabla de Odontologos creada con exito
+2024-08-10 23:23:08 INFO  com.dh.evaluacion.dao.implementacion.ImpleOdontologoDAOH2 - Inciando operacion de guardado de un odontologo
+2024-08-10 23:23:08 INFO  com.dh.evaluacion.dao.implementacion.ImpleOdontologoDAOH2 - Datos de Odotologo guardados con Exito
+2024-08-10 23:23:08 INFO  com.dh.evaluacion.dao.implementacion.ImpleOdontologoDAOH2 - Inciando operacion de guardado de un odontologo
+2024-08-10 23:23:08 INFO  com.dh.evaluacion.dao.implementacion.ImpleOdontologoDAOH2 - Datos de Odotologo guardados con Exito
+2024-08-10 23:23:08 INFO  com.dh.evaluacion.dao.implementacion.ImpleOdontologoDAOH2 - Inciando operacion de guardado de un odontologo
+2024-08-10 23:23:08 INFO  com.dh.evaluacion.dao.implementacion.ImpleOdontologoDAOH2 - Datos de Odotologo guardados con Exito
+2024-08-10 23:23:08 INFO  com.dh.evaluacion.dao.implementacion.ImpleOdontologoDAOH2 - Inciando operacion de guardado de un odontologo
+2024-08-10 23:23:08 INFO  com.dh.evaluacion.dao.implementacion.ImpleOdontologoDAOH2 - Datos de Odotologo guardados con Exito
+[2024-08-10 23:28:27] [ INFO ] [BDH2:23] Conexion a h2 establecida con exito
+[2024-08-10 23:28:27] [ INFO ] [BDH2:27] Tabla de Odontologos creada con exito
+[2024-08-10 23:28:27] [ INFO ] [ImpleOdontologoDAOH2:52] Obteniendo todos los Odontologos en la BD H2
+[2024-08-10 23:28:27] [ INFO ] [BDH2:23] Conexion a h2 establecida con exito
+[2024-08-10 23:28:27] [ INFO ] [BDH2:27] Tabla de Odontologos creada con exito
+[2024-08-10 23:28:27] [ INFO ] [ImpleOdontologoDAOH2:24] Inciando operacion de guardado de un odontologo
+[2024-08-10 23:28:27] [ INFO ] [ImpleOdontologoDAOH2:33] Datos de Odotologo guardados con Exito
+[2024-08-10 23:28:27] [ INFO ] [ImpleOdontologoDAOH2:24] Inciando operacion de guardado de un odontologo
+[2024-08-10 23:28:27] [ INFO ] [ImpleOdontologoDAOH2:33] Datos de Odotologo guardados con Exito
+[2024-08-10 23:28:27] [ INFO ] [ImpleOdontologoDAOH2:24] Inciando operacion de guardado de un odontologo
+[2024-08-10 23:28:27] [ INFO ] [ImpleOdontologoDAOH2:33] Datos de Odotologo guardados con Exito
+[2024-08-10 23:28:27] [ INFO ] [ImpleOdontologoDAOH2:24] Inciando operacion de guardado de un odontologo
+[2024-08-10 23:28:27] [ INFO ] [ImpleOdontologoDAOH2:33] Datos de Odotologo guardados con Exito
+[2024-08-10 23:29:11] [ ERROR] [ImpleOdontologoDAOH2:56] Table "ODONTOLOGOS" not found (this database is empty); SQL statement:
+SELECT * FROM ODONTOLOGOS [42104-230]
+[2024-08-10 23:29:11] [ INFO ] [BDH2:23] Conexion a h2 establecida con exito
+[2024-08-10 23:29:11] [ INFO ] [BDH2:27] Tabla de Odontologos creada con exito
+[2024-08-10 23:29:11] [ INFO ] [ImpleOdontologoDAOH2:24] Inciando operacion de guardado de un odontologo
+[2024-08-10 23:29:11] [ INFO ] [ImpleOdontologoDAOH2:33] Datos de Odotologo guardados con Exito
+[2024-08-10 23:29:11] [ INFO ] [ImpleOdontologoDAOH2:24] Inciando operacion de guardado de un odontologo
+[2024-08-10 23:29:11] [ INFO ] [ImpleOdontologoDAOH2:33] Datos de Odotologo guardados con Exito
+[2024-08-10 23:29:11] [ INFO ] [ImpleOdontologoDAOH2:24] Inciando operacion de guardado de un odontologo
+[2024-08-10 23:29:11] [ INFO ] [ImpleOdontologoDAOH2:33] Datos de Odotologo guardados con Exito
+[2024-08-10 23:29:11] [ INFO ] [ImpleOdontologoDAOH2:24] Inciando operacion de guardado de un odontologo
+[2024-08-10 23:29:11] [ INFO ] [ImpleOdontologoDAOH2:33] Datos de Odotologo guardados con Exito
+[2024-08-10 23:35:11] [ INFO ] [BDH2:23] Conexion a h2 establecida con exito
+[2024-08-10 23:35:11] [ INFO ] [BDH2:27] Tabla de Odontologos creada con exito
+[2024-08-10 23:35:11] [ INFO ] [ImpleOdontologoDAOH2:24] Inciando operacion de guardado de un odontologo
+[2024-08-10 23:35:11] [ INFO ] [ImpleOdontologoDAOH2:33] Datos de Odotologo guardados con Exito
+[2024-08-10 23:35:11] [ INFO ] [ImpleOdontologoDAOH2:24] Inciando operacion de guardado de un odontologo
+[2024-08-10 23:35:11] [ INFO ] [ImpleOdontologoDAOH2:33] Datos de Odotologo guardados con Exito
+[2024-08-10 23:35:11] [ INFO ] [ImpleOdontologoDAOH2:24] Inciando operacion de guardado de un odontologo
+[2024-08-10 23:35:11] [ INFO ] [ImpleOdontologoDAOH2:33] Datos de Odotologo guardados con Exito
+[2024-08-10 23:35:11] [ INFO ] [ImpleOdontologoDAOH2:52] Obteniendo todos los Odontologos en la BD H2
+[2024-08-10 23:35:39] [ INFO ] [BDH2:23] Conexion a h2 establecida con exito
+[2024-08-10 23:35:39] [ INFO ] [BDH2:27] Tabla de Odontologos creada con exito
+[2024-08-10 23:35:39] [ INFO ] [ImpleOdontologoDAOH2:24] Inciando operacion de guardado de un odontologo
+[2024-08-10 23:35:39] [ INFO ] [ImpleOdontologoDAOH2:33] Datos de Odotologo guardados con Exito
+[2024-08-10 23:35:39] [ INFO ] [ImpleOdontologoDAOH2:24] Inciando operacion de guardado de un odontologo
+[2024-08-10 23:35:39] [ INFO ] [ImpleOdontologoDAOH2:33] Datos de Odotologo guardados con Exito
+[2024-08-10 23:35:39] [ INFO ] [ImpleOdontologoDAOH2:24] Inciando operacion de guardado de un odontologo
+[2024-08-10 23:35:39] [ INFO ] [ImpleOdontologoDAOH2:33] Datos de Odotologo guardados con Exito
+[2024-08-10 23:35:39] [ INFO ] [ImpleOdontologoDAOH2:52] Obteniendo todos los Odontologos en la BD H2
+[2024-08-10 23:35:39] [ INFO ] [BDH2:23] Conexion a h2 establecida con exito
+[2024-08-10 23:35:39] [ INFO ] [BDH2:27] Tabla de Odontologos creada con exito
+[2024-08-10 23:35:39] [ INFO ] [ImpleOdontologoDAOH2:24] Inciando operacion de guardado de un odontologo
+[2024-08-10 23:35:39] [ INFO ] [ImpleOdontologoDAOH2:33] Datos de Odotologo guardados con Exito
+[2024-08-10 23:35:39] [ INFO ] [ImpleOdontologoDAOH2:24] Inciando operacion de guardado de un odontologo
+[2024-08-10 23:35:39] [ INFO ] [ImpleOdontologoDAOH2:33] Datos de Odotologo guardados con Exito
+[2024-08-10 23:35:39] [ INFO ] [ImpleOdontologoDAOH2:24] Inciando operacion de guardado de un odontologo
+[2024-08-10 23:35:39] [ INFO ] [ImpleOdontologoDAOH2:33] Datos de Odotologo guardados con Exito
+[2024-08-10 23:35:39] [ INFO ] [ImpleOdontologoDAOH2:24] Inciando operacion de guardado de un odontologo
+[2024-08-10 23:35:39] [ INFO ] [ImpleOdontologoDAOH2:33] Datos de Odotologo guardados con Exito
+[2024-08-10 23:37:27] [ INFO ] [BDH2:23] Conexion a h2 establecida con exito
+[2024-08-10 23:37:27] [ INFO ] [BDH2:27] Tabla de Odontologos creada con exito
+[2024-08-10 23:37:27] [ INFO ] [ImpleOdontologoDAOH2:24] Inciando operacion de guardado de un odontologo
+[2024-08-10 23:37:27] [ INFO ] [ImpleOdontologoDAOH2:33] Datos de Odotologo guardados con Exito
+[2024-08-10 23:37:27] [ INFO ] [ImpleOdontologoDAOH2:24] Inciando operacion de guardado de un odontologo
+[2024-08-10 23:37:27] [ INFO ] [ImpleOdontologoDAOH2:33] Datos de Odotologo guardados con Exito
+[2024-08-10 23:37:27] [ INFO ] [ImpleOdontologoDAOH2:24] Inciando operacion de guardado de un odontologo
+[2024-08-10 23:37:27] [ INFO ] [ImpleOdontologoDAOH2:33] Datos de Odotologo guardados con Exito
+[2024-08-10 23:37:27] [ INFO ] [ImpleOdontologoDAOH2:52] Obteniendo todos los Odontologos en la BD H2
+[2024-08-10 23:37:27] [ INFO ] [BDH2:23] Conexion a h2 establecida con exito
+[2024-08-10 23:37:27] [ INFO ] [BDH2:27] Tabla de Odontologos creada con exito
+[2024-08-10 23:37:27] [ INFO ] [ImpleOdontologoDAOH2:24] Inciando operacion de guardado de un odontologo
+[2024-08-10 23:37:27] [ INFO ] [ImpleOdontologoDAOH2:33] Datos de Odotologo guardados con Exito
+[2024-08-10 23:37:27] [ INFO ] [ImpleOdontologoDAOH2:24] Inciando operacion de guardado de un odontologo
+[2024-08-10 23:37:27] [ INFO ] [ImpleOdontologoDAOH2:33] Datos de Odotologo guardados con Exito
+[2024-08-10 23:37:27] [ INFO ] [ImpleOdontologoDAOH2:24] Inciando operacion de guardado de un odontologo
+[2024-08-10 23:37:27] [ INFO ] [ImpleOdontologoDAOH2:33] Datos de Odotologo guardados con Exito
+[2024-08-10 23:37:27] [ INFO ] [ImpleOdontologoDAOH2:24] Inciando operacion de guardado de un odontologo
+[2024-08-10 23:37:27] [ INFO ] [ImpleOdontologoDAOH2:33] Datos de Odotologo guardados con Exito
