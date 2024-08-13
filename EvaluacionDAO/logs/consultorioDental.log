@@ -1,0 +1,4 @@
+[2024-08-12 17:59:54] [ INFO ] [BDH2:33] Conexion a h2 establecida con exito
+[2024-08-12 17:59:54] [ INFO ] [BDH2:41] datos y tablas creados con exito
+[2024-08-12 17:59:54] [ INFO ] [PacienteDAOH2:45] iniciando las operaciones de buscado de un paciente
+[2024-08-12 17:59:54] [ INFO ] [DomicilioDAOH2:33] iniciando las operaciones de buscado de un domicilio
