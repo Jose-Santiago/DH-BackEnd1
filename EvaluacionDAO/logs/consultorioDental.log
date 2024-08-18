@@ -1,4 +1,54 @@
-[2024-08-12 17:59:54] [ INFO ] [BDH2:33] Conexion a h2 establecida con exito
-[2024-08-12 17:59:54] [ INFO ] [BDH2:41] datos y tablas creados con exito
-[2024-08-12 17:59:54] [ INFO ] [PacienteDAOH2:45] iniciando las operaciones de buscado de un paciente
-[2024-08-12 17:59:54] [ INFO ] [DomicilioDAOH2:33] iniciando las operaciones de buscado de un domicilio
+[2024-08-12 19:46:04] [ INFO ] [BDH2:33] Conexion a h2 establecida con exito
+[2024-08-12 19:46:04] [ INFO ] [BDH2:41] datos y tablas creados con exito
+[2024-08-12 19:46:04] [ INFO ] [PacienteDAOH2:45] iniciando las operaciones de buscado de un paciente
+[2024-08-12 19:46:04] [ INFO ] [DomicilioDAOH2:33] iniciando las operaciones de buscado de un domicilio
+[2024-08-12 19:46:04] [ INFO ] [BDH2:33] Conexion a h2 establecida con exito
+[2024-08-12 19:46:04] [ INFO ] [BDH2:41] datos y tablas creados con exito
+[2024-08-12 19:46:04] [ INFO ] [ImpleOdontologoDAOH2:29] Inciando operacion de guardado de un odontologo
+[2024-08-12 19:46:04] [ INFO ] [ImpleOdontologoDAOH2:38] Datos de Odotologo guardados con Exito
+[2024-08-12 19:46:04] [ INFO ] [ImpleOdontologoDAOH2:29] Inciando operacion de guardado de un odontologo
+[2024-08-12 19:46:04] [ INFO ] [ImpleOdontologoDAOH2:38] Datos de Odotologo guardados con Exito
+[2024-08-12 19:46:04] [ INFO ] [ImpleOdontologoDAOH2:29] Inciando operacion de guardado de un odontologo
+[2024-08-12 19:46:04] [ INFO ] [ImpleOdontologoDAOH2:38] Datos de Odotologo guardados con Exito
+[2024-08-12 19:46:04] [ INFO ] [ImpleOdontologoDAOH2:115] Obteniendo todos los Odontologos en la BD H2
+[2024-08-12 19:46:04] [ INFO ] [ImpleOdontologoDAOH2:69] Iniciando Actualizacion de datos de Odontologo
+[2024-08-12 19:46:04] [ INFO ] [ImpleOdontologoDAOH2:79] Odontologo actualizado con exito
+[2024-08-12 19:46:04] [ INFO ] [ImpleOdontologoDAOH2:115] Obteniendo todos los Odontologos en la BD H2
+[2024-08-12 19:46:04] [ INFO ] [ImpleOdontologoDAOH2:51] Buscando por ID a un Odontologo
+[2024-08-12 19:46:04] [ INFO ] [BDH2:33] Conexion a h2 establecida con exito
+[2024-08-12 19:46:04] [ INFO ] [BDH2:41] datos y tablas creados con exito
+[2024-08-12 19:46:04] [ INFO ] [ImpleOdontologoDAOH2:29] Inciando operacion de guardado de un odontologo
+[2024-08-12 19:46:04] [ INFO ] [ImpleOdontologoDAOH2:38] Datos de Odotologo guardados con Exito
+[2024-08-12 19:46:04] [ INFO ] [ImpleOdontologoDAOH2:29] Inciando operacion de guardado de un odontologo
+[2024-08-12 19:46:04] [ INFO ] [ImpleOdontologoDAOH2:38] Datos de Odotologo guardados con Exito
+[2024-08-12 19:46:04] [ INFO ] [ImpleOdontologoDAOH2:29] Inciando operacion de guardado de un odontologo
+[2024-08-12 19:46:04] [ INFO ] [ImpleOdontologoDAOH2:38] Datos de Odotologo guardados con Exito
+[2024-08-12 19:46:04] [ INFO ] [ImpleOdontologoDAOH2:29] Inciando operacion de guardado de un odontologo
+[2024-08-12 19:46:04] [ INFO ] [ImpleOdontologoDAOH2:38] Datos de Odotologo guardados con Exito
+[2024-08-12 19:46:04] [ INFO ] [BDH2:33] Conexion a h2 establecida con exito
+[2024-08-12 19:46:04] [ INFO ] [BDH2:41] datos y tablas creados con exito
+[2024-08-12 19:46:04] [ INFO ] [ImpleOdontologoDAOH2:29] Inciando operacion de guardado de un odontologo
+[2024-08-12 19:46:04] [ INFO ] [ImpleOdontologoDAOH2:38] Datos de Odotologo guardados con Exito
+[2024-08-12 19:46:04] [ INFO ] [ImpleOdontologoDAOH2:29] Inciando operacion de guardado de un odontologo
+[2024-08-12 19:46:04] [ INFO ] [ImpleOdontologoDAOH2:38] Datos de Odotologo guardados con Exito
+[2024-08-12 19:46:04] [ INFO ] [ImpleOdontologoDAOH2:29] Inciando operacion de guardado de un odontologo
+[2024-08-12 19:46:04] [ INFO ] [ImpleOdontologoDAOH2:38] Datos de Odotologo guardados con Exito
+[2024-08-12 19:46:04] [ INFO ] [ImpleOdontologoDAOH2:115] Obteniendo todos los Odontologos en la BD H2
+[2024-08-12 19:46:04] [ WARN ] [ImpleOdontologoDAOH2:87] Iniciando operaciones para eliminar un Odontologo
+[2024-08-12 19:46:04] [ INFO ] [ImpleOdontologoDAOH2:51] Buscando por ID a un Odontologo
+[2024-08-12 19:46:04] [ WARN ] [ImpleOdontologoDAOH2:95] Odontologo a eliminar con ID: 3 y nombre: pedro
+[2024-08-12 19:46:04] [ INFO ] [ImpleOdontologoDAOH2:97] Odontologo eliminado con exito
+[2024-08-12 19:46:04] [ INFO ] [ImpleOdontologoDAOH2:115] Obteniendo todos los Odontologos en la BD H2
+[2024-08-12 19:46:04] [ INFO ] [ImpleOdontologoDAOH2:115] Obteniendo todos los Odontologos en la BD H2
+[2024-08-17 13:42:30] [ INFO ] [BDH2:33] Conexion a h2 establecida con exito
+[2024-08-17 13:42:30] [ INFO ] [BDH2:41] datos y tablas creados con exito
+[2024-08-17 13:42:30] [ INFO ] [ImplePacienteDAOH2:45] iniciando las operaciones de buscado de un paciente
+[2024-08-17 13:42:30] [ INFO ] [ImpleDomicilioDAOH2:33] iniciando las operaciones de buscado de un domicilio
+[2024-08-17 13:43:15] [ INFO ] [BDH2:33] Conexion a h2 establecida con exito
+[2024-08-17 13:43:15] [ INFO ] [BDH2:41] datos y tablas creados con exito
+[2024-08-17 13:43:15] [ INFO ] [ImplePacienteDAOH2:45] iniciando las operaciones de buscado de un paciente
+[2024-08-17 13:43:15] [ INFO ] [ImpleDomicilioDAOH2:33] iniciando las operaciones de buscado de un domicilio
+[2024-08-18 09:12:06] [ INFO ] [BDH2:33] Conexion a h2 establecida con exito
+[2024-08-18 09:12:06] [ INFO ] [BDH2:41] datos y tablas creados con exito
+[2024-08-18 09:12:06] [ INFO ] [ImplePacienteDAOH2:45] iniciando las operaciones de buscado de un paciente
+[2024-08-18 09:12:06] [ INFO ] [ImpleDomicilioDAOH2:33] iniciando las operaciones de buscado de un domicilio

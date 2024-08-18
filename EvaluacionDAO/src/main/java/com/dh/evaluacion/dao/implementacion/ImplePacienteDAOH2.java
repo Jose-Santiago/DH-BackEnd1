@@ -10,8 +10,8 @@ import org.apache.logging.log4j.Logger;
 import java.sql.*;
 import java.util.List;
 
-public class PacienteDAOH2 implements IDao<Paciente> {
-    private static final Logger logger= LogManager.getLogger(PacienteDAOH2.class);
+public class ImplePacienteDAOH2 implements IDao<Paciente> {
+    private static final Logger logger= LogManager.getLogger(ImplePacienteDAOH2.class);
     private static final String SQL_INSERT="INSERT INTO PACIENTES (NOMBRE, APELLIDO, CEDULA, FECHA_INGRESO, DOMICILIO_ID) " +
             "VALUES(?,?,?,?,?)";
     private static final String SQL_SELECT_ONE="SELECT * FROM PACIENTES WHERE ID=? ";
@@ -52,7 +52,7 @@ public class PacienteDAOH2 implements IDao<Paciente> {
             PreparedStatement psSelectOne= connection.prepareStatement(SQL_SELECT_ONE);
             psSelectOne.setInt(1,id);
             ResultSet rs= psSelectOne.executeQuery();
-            DomicilioDAOH2 daoAux= new DomicilioDAOH2();
+            ImpleDomicilioDAOH2 daoAux= new ImpleDomicilioDAOH2();
             while (rs.next()){
                 domicilio= daoAux.buscarPorId(rs.getInt(6));
                 paciente= new Paciente(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getDate(5).toLocalDate(),domicilio);

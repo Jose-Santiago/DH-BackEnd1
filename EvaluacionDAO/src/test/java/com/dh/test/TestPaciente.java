@@ -15,6 +15,7 @@ public class TestPaciente {
         ServicioPaciente servicioPaciente = new ServicioPaciente();
         Integer idABuscar = 1;
         Paciente paciente = servicioPaciente.buscarPorId(idABuscar);
+        System.out.println("Paciente: " + paciente.getNombre());
         assertNotNull(paciente);
     }
 }

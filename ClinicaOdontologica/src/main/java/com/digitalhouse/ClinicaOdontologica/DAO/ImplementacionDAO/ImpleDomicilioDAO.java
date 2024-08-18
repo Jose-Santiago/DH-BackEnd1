@@ -1,8 +1,8 @@
-package com.dh.evaluacion.dao.implementacion;
+package com.digitalhouse.ClinicaOdontologica.DAO.ImplementacionDAO;
 
-import com.dh.evaluacion.dao.BDH2;
-import com.dh.evaluacion.dao.IDao;
-import com.dh.evaluacion.model.Domicilio;
+import com.digitalhouse.ClinicaOdontologica.DAO.BDH2;
+import com.digitalhouse.ClinicaOdontologica.DAO.IDao;
+import com.digitalhouse.ClinicaOdontologica.Model.Domicilio;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -11,8 +11,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.List;
 
-public class DomicilioDAOH2 implements IDao<Domicilio> {
-    private static final Logger logger= LogManager.getLogger(DomicilioDAOH2.class);
+public class ImpleDomicilioDAO implements IDao<Domicilio> {
+    private static final Logger logger= LogManager.getLogger(ImpleDomicilioDAO.class);
     private static final String SQL_SELECT_ONE="SELECT * FROM DOMICILIOS WHERE ID=?";
 
     @Override
@@ -47,6 +47,13 @@ public class DomicilioDAOH2 implements IDao<Domicilio> {
             logger.error("conexion fallida: "+e.getMessage());
         }
         return domicilio;
+    }
+
+    @Override
+    public Domicilio buscarPorString(String string) {
+        logger.info("inciando operaciones de busqueda: ${}", string);
+
+        return null;
     }
 
     @Override
