@@ -1,5 +1,6 @@
 package com.digitalhouse.ClinicaOdontologica.Model;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -15,6 +16,9 @@ public class Paciente {
     private LocalDate fechaIngreso;
     private Domicilio domicilio;
     private String email;
+
+    public Paciente() {
+    }
 
     public Paciente(Integer id, String nombre, String apellido, String cedula, LocalDate fechaIngreso, Domicilio domicilio, String email) {
         this.id = id;
@@ -34,4 +38,5 @@ public class Paciente {
         this.domicilio = domicilio;
         this.email = email;
     }
+
 }

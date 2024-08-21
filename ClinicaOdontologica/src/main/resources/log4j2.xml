@@ -14,13 +14,13 @@
 
     <Loggers>
         <!-- Logger para la clase DBH2 -->
-        <Logger name="com.digitalhouse.ClinicaOdontologica.DAO.BDH2" level="info" additivity="false">
+        <Logger name="com.digitalhouse.ClinicaOdontologica.Repository.BDH2" level="info" additivity="false">
             <AppenderRef ref="ConsoleAppender" />
             <AppenderRef ref="FileAppender" />
         </Logger>
 
         <!-- Logger para la clase ImpleOdontologoDAO -->
-        <Logger name="com.digitalhouse.ClinicaOdontologica.DAO.ImplementacionDAO.ImpleOdontologoDAO" level="info" additivity="false">
+        <Logger name="com.digitalhouse.ClinicaOdontologica.Repository.ImplementacionRepository.ImpleOdontologoRepository" level="info" additivity="false">
             <AppenderRef ref="ConsoleAppender" />
             <AppenderRef ref="FileAppender" />
         </Logger>

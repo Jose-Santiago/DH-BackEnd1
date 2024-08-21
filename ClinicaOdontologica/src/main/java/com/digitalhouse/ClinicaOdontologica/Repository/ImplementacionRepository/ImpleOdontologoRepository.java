@@ -1,7 +1,7 @@
-package com.digitalhouse.ClinicaOdontologica.DAO.ImplementacionDAO;
+package com.digitalhouse.ClinicaOdontologica.Repository.ImplementacionRepository;
 
-import com.digitalhouse.ClinicaOdontologica.DAO.BDH2;
-import com.digitalhouse.ClinicaOdontologica.DAO.IDao;
+import com.digitalhouse.ClinicaOdontologica.Repository.BDH2;
+import com.digitalhouse.ClinicaOdontologica.Repository.IDao;
 import com.digitalhouse.ClinicaOdontologica.Model.Odontologo;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -13,8 +13,8 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ImpleOdontologoDAO implements IDao<Odontologo> {
-    private static final Logger logger = LogManager.getLogger(ImpleOdontologoDAO.class);
+public class ImpleOdontologoRepository implements IDao<Odontologo> {
+    private static final Logger logger = LogManager.getLogger(ImpleOdontologoRepository.class);
 
     private static final String SQL_INSERT_ODONTOLOGO = "INSERT INTO ODONTOLOGOS(MATRICULA, NOMBRE, APELLIDO) VALUES(?,?,?);";
     private static final String SQL_OBTENER_ODONTOLOGOS = "SELECT * FROM ODONTOLOGOS";
@@ -34,7 +34,7 @@ public class ImpleOdontologoDAO implements IDao<Odontologo> {
             psInsert.setInt(1,odontologo.getMatricula());
             psInsert.setString(2, odontologo.getNombre());
             psInsert.setString(3, odontologo.getApellido());
-            psInsert.execute();
+            //psInsert.execute();
             logger.info("Datos de Odotologo guardados con Exito");
 
             ResultSet resultSet = psInsert.getGeneratedKeys();
@@ -62,11 +62,6 @@ public class ImpleOdontologoDAO implements IDao<Odontologo> {
             logger.error("Error al buscar por id a un odontologo: {}", e.getMessage());
         }
         return odontologo;
-    }
-
-    @Override
-    public Odontologo buscarPorString(String string) {
-        return null;
     }
 
     @Override
@@ -110,7 +105,7 @@ public class ImpleOdontologoDAO implements IDao<Odontologo> {
     }
 
     @Override
-    public List<Odontologo> mostrarOdontologos() {
+    public List<Odontologo> mostrarTodos() {
         List<Odontologo> listaOdontologos = new ArrayList<>();
         try {
             Connection connection = BDH2.getConnection();

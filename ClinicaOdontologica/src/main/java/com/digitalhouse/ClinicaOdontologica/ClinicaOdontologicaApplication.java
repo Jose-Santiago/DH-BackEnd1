@@ -1,7 +1,6 @@
 package com.digitalhouse.ClinicaOdontologica;
 
-import com.digitalhouse.ClinicaOdontologica.DAO.BDH2;
-import jakarta.annotation.PostConstruct;
+import com.digitalhouse.ClinicaOdontologica.Repository.BDH2;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
