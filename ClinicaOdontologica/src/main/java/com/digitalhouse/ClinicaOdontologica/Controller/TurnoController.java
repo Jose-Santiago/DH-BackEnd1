@@ -1,5 +1,7 @@
 package com.digitalhouse.ClinicaOdontologica.Controller;
 
+import com.digitalhouse.ClinicaOdontologica.Model.Odontologo;
+import com.digitalhouse.ClinicaOdontologica.Model.Paciente;
 import com.digitalhouse.ClinicaOdontologica.Model.Turno;
 import com.digitalhouse.ClinicaOdontologica.Service.ServicioOdontologo;
 import com.digitalhouse.ClinicaOdontologica.Service.ServicioPaciente;
@@ -26,6 +28,8 @@ public class TurnoController {
 
     @PostMapping
     public ResponseEntity<Turno> registrarTurno(@RequestBody Turno turno){
+        Paciente pacienteBuscado = servicioPaciente.buscarPorId(turno.getPaciente().getId());
+        Odontologo odontologoBuscado = servicioOdontologo.buscarPorID(turno.getOdontologo().getId());
         return null;
     }
 }

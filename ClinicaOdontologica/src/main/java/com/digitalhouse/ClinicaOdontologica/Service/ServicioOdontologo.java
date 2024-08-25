@@ -21,14 +21,10 @@ public class ServicioOdontologo {
     public Odontologo buscarPorID(Integer id){
         return odontologoRepository.buscarPorId(id);
     }
-    public void actualizarOdontologo(Odontologo odontologo){
-        odontologoRepository.actualizar(odontologo);
-    }
-
+    public void actualizarOdontologo(Odontologo odontologo){odontologoRepository.actualizar(odontologo);}
     public void eliminarOdontologo(Integer id){
         odontologoRepository.eliminar(id);
     }
-
     public List<Odontologo> mostrarOdontologos(){
         return odontologoRepository.mostrarTodos();
     }

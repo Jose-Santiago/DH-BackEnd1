@@ -29,7 +29,6 @@ public class ImplePacienteRepository implements IDao<Paciente> {
         Connection connection= null;
         ImpleDomicilioRepository impleDomicilioRepository = new ImpleDomicilioRepository();
         Domicilio domicilio = impleDomicilioRepository.guardar(paciente.getDomicilio());
-        logger.info("Domicilio Guardado correcrtamente.");
         try{
             connection= BDH2.getConnection();
             PreparedStatement psInsert= connection.prepareStatement(SQL_INSERT, Statement.RETURN_GENERATED_KEYS);
@@ -66,7 +65,7 @@ public class ImplePacienteRepository implements IDao<Paciente> {
             ImpleDomicilioRepository daoAux= new ImpleDomicilioRepository();
             while (rs.next()){
                 domicilio= daoAux.buscarPorId(rs.getInt(6));
-                paciente= new Paciente(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getDate(5).toLocalDate(),domicilio, rs.getString(6));
+                paciente= new Paciente(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4),rs.getDate(5).toLocalDate(),domicilio, rs.getString(7));
             }
 
         }catch (Exception e){
@@ -104,6 +103,10 @@ public class ImplePacienteRepository implements IDao<Paciente> {
     public void actualizar(Paciente paciente) {
         logger.info("Inicio de actualizacion de Paciente");
 
+        ImpleDomicilioRepository impleDomicilioRepository = new ImpleDomicilioRepository();
+        impleDomicilioRepository.actualizar(paciente.getDomicilio());
+        Domicilio domicilio = impleDomicilioRepository.buscarPorId(paciente.getDomicilio().getId());
+        logger.info("Domicilio encontrado correctamente.");
         try {
             Connection connection = BDH2.getConnection();
             PreparedStatement psActualizar = connection.prepareStatement(SQL_UPDATE_PACIENTE);
@@ -111,7 +114,7 @@ public class ImplePacienteRepository implements IDao<Paciente> {
             psActualizar.setString(2, paciente.getApellido());
             psActualizar.setString(3, paciente.getCedula());
             psActualizar.setDate(4,Date.valueOf(paciente.getFechaIngreso()));
-            psActualizar.setInt(5,paciente.getDomicilio().getId());
+            psActualizar.setInt(5,domicilio.getId());
             psActualizar.setString(6, paciente.getEmail());
             psActualizar.setInt(7, paciente.getId());
             Integer filasActualizadas = psActualizar.executeUpdate();
@@ -128,18 +131,13 @@ public class ImplePacienteRepository implements IDao<Paciente> {
 
     @Override
     public void eliminar(Integer id) {
-        logger.warn("Intentando Eliminar un paciente por ID: ${}", id);
-        Paciente pacienteAEliminar = buscarPorId(id);
+        logger.warn("Intentando Eliminar un paciente por ID: {}", id);
         try {
-            if (pacienteAEliminar != null){
-                Connection connection = BDH2.getConnection();
-                PreparedStatement psEliminar = connection.prepareStatement(SQL_DELETE_PACIENTE);
-                psEliminar.setInt(1,id);
-                psEliminar.execute();
-                logger.warn("Paciente Eliminado con exito!!!");
-            }else {
-                logger.info("No se encontro un paciente con el ID: {}", id);
-            }
+            Connection connection = BDH2.getConnection();
+            PreparedStatement psEliminar = connection.prepareStatement(SQL_DELETE_PACIENTE);
+            psEliminar.setInt(1,id);
+            psEliminar.execute();
+            logger.warn("Paciente Eliminado con exito!!!");
         } catch (Exception e) {
             logger.error("error de conexion al eliminar paciente : ${}", e.getMessage());
         }
@@ -163,9 +161,8 @@ public class ImplePacienteRepository implements IDao<Paciente> {
                 String email = resultSet.getString("EMAIL");
 
                 todosLosPacientes.add(new Paciente(id, nombre, apellido, cedula, fechaIngreso, domicilio, email));
-                logger.info("Se obtuvieron todos los Pacientes de la base de datos");
             }
-
+            logger.info("Se obtuvieron todos los Pacientes de la base de datos");
         } catch (Exception e) {
             logger.error("error de conexion al obtener todos los pacientes: ${}", e.getMessage());
         }

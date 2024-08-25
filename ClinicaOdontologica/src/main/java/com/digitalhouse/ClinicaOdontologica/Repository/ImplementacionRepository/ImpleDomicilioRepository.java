@@ -16,6 +16,8 @@ public class ImpleDomicilioRepository implements IDao<Domicilio> {
     private static final Logger logger= LogManager.getLogger(ImpleDomicilioRepository.class);
     private static final String SQL_SELECT_ONE="SELECT * FROM DOMICILIOS WHERE ID=?";
     private static final String SQL_INSERT="INSERT INTO DOMICILIOS (CALLE, NUMERO, LOCALIDAD, PROVINCIA) VALUES(?,?,?,?)";
+    private static final String SQL_DELETE = "DELETE FROM PACIENTES WHERE ID = ?";
+    private static final String SQL_UPDATE = "UPDATE DOMICILIOS SET CALLE = ?, NUMERO = ?, LOCALIDAD = ?, PROVINCIA = ? WHERE ID = ?";
 
     @Override
     public Domicilio guardar(Domicilio domicilio) {
@@ -62,14 +64,36 @@ public class ImpleDomicilioRepository implements IDao<Domicilio> {
 
     @Override
     public void actualizar(Domicilio domicilio) {
+        logger.info("Iniciando Actuaizacion de un Domicilio con ID: {}", domicilio.getId());
+        try {
+            Connection connection = BDH2.getConnection();
+            PreparedStatement psUpdate = connection.prepareStatement(SQL_UPDATE);
+            psUpdate.setString(1, domicilio.getCalle());
+            psUpdate.setInt(2, domicilio.getNumero());
+            psUpdate.setString(3, domicilio.getLocalidad());
+            psUpdate.setString(4, domicilio.getProvincia());
+            psUpdate.setInt(5, domicilio.getId());
+            psUpdate.execute();
+            logger.info("Domicilio Actualizado con Exito!!");
+        } catch (Exception e) {
+            logger.error("Error de conexion al Actualizar Domicilio ID: {} error: {}", domicilio.getId(), e.getMessage());
+        }
     }
 
     @Override
     public void eliminar(Integer id) {
+        logger.info("Intentando eliminar el Domcilio con id: {}", id);
+        try {
+            Connection connection = BDH2.getConnection();
+            PreparedStatement psEliminar = connection.prepareStatement(SQL_DELETE);
+            psEliminar.setInt(1, id);
+            psEliminar.execute();
+            logger.info("Domicilio Eliminado con exito");
+        } catch (Exception e) {
+            logger.error("Error de conexion al Eliminar el domicilio con id: {}, error: {} ", id, e.getMessage());
+        }
     }
 
     @Override
-    public List<Domicilio> mostrarTodos() {
-        return List.of();
-    }
+    public List<Domicilio> mostrarTodos() { return List.of(); }
 }

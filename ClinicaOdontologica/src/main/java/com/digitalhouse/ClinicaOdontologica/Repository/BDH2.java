@@ -34,8 +34,8 @@ public class BDH2 {
 
             Statement statement = connection.createStatement();
             statement.execute(SQL_CREATE_ODONTOLOGOS);
-            statement.execute(SQL_CREATE_PACIENTES);
             statement.execute(SQL_CREATE_DOMICILIOS);
+            statement.execute(SQL_CREATE_PACIENTES);
             statement.execute(SQL_INSERT_PRUEBA);
 
             logger.info("datos y tablas creados con exito");

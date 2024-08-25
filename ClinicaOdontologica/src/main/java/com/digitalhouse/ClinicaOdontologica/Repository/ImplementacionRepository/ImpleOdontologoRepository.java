@@ -34,13 +34,14 @@ public class ImpleOdontologoRepository implements IDao<Odontologo> {
             psInsert.setInt(1,odontologo.getMatricula());
             psInsert.setString(2, odontologo.getNombre());
             psInsert.setString(3, odontologo.getApellido());
-            //psInsert.execute();
+            psInsert.execute();
             logger.info("Datos de Odotologo guardados con Exito");
-
+            psInsert.execute();
             ResultSet resultSet = psInsert.getGeneratedKeys();
             while (resultSet.next()) odontologo.setId(resultSet.getInt("ID"));
 
         } catch (Exception e) {
+            odontologo = null;
             logger.error("Error al guardar Odontologo {}", e.getMessage());
         }
         return odontologo;
@@ -75,7 +76,6 @@ public class ImpleOdontologoRepository implements IDao<Odontologo> {
             psActualizar.setString(3, odontologo.getApellido());
             psActualizar.setInt(4, odontologo.getId());
             psActualizar.execute();
-
             logger.info("Odontologo actualizado con exito");
         } catch (Exception e) {
             logger.error("Error al Actualizar el odontologo: {}",e.getMessage());
@@ -85,20 +85,13 @@ public class ImpleOdontologoRepository implements IDao<Odontologo> {
     @Override
     public void eliminar(Integer id) {
         logger.warn("Iniciando operaciones para eliminar un Odontologo");
-
-        Odontologo odontologoAEliminar = buscarPorId(id);
         try {
-            if (odontologoAEliminar != null) {
-                Connection connection = BDH2.getConnection();
-                PreparedStatement psEliminar = connection.prepareStatement(SQL_DELETE_ODONTOLOGO);
-                psEliminar.setInt(1, id);
-                logger.warn("Odontologo a eliminar con ID: {} y nombre: {}", id, odontologoAEliminar.getNombre());
-                psEliminar.execute();
-                logger.info("Odontologo eliminado con exito");
-
-            }else{
-                logger.warn("Odontologo a eliminar no encontrado por id: {}", id);
-            }
+            Connection connection = BDH2.getConnection();
+            PreparedStatement psEliminar = connection.prepareStatement(SQL_DELETE_ODONTOLOGO);
+            psEliminar.setInt(1, id);
+            logger.warn("Odontologo a eliminar con ID: {}", id);
+            psEliminar.execute();
+            logger.info("Odontologo eliminado con exito");
         } catch (Exception e) {
             logger.error("Error al Eliminar Odontologo: {}", e.getMessage());
         }
@@ -111,10 +104,10 @@ public class ImpleOdontologoRepository implements IDao<Odontologo> {
             Connection connection = BDH2.getConnection();
             PreparedStatement psObtener = connection.prepareStatement(SQL_OBTENER_ODONTOLOGOS);
             ResultSet resultSet = psObtener.executeQuery();
-
-            logger.info("Obteniendo todos los Odontologos en la BD H2");
-
-            while (resultSet.next())listaOdontologos.add(new Odontologo(resultSet.getInt("ID"), resultSet.getInt("MATRICULA"), resultSet.getString("NOMBRE"), resultSet.getString("APELLIDO")));
+            while (resultSet.next()){
+                listaOdontologos.add(new Odontologo(resultSet.getInt("ID"), resultSet.getInt("MATRICULA"), resultSet.getString("NOMBRE"), resultSet.getString("APELLIDO")));
+            }
+            logger.info("se obtuvieron todos los odontologos de la Base de Datos");
         } catch (Exception e) {
             logger.error("Error al obtener todos los Odontologos: {}", e.getMessage());
         }
