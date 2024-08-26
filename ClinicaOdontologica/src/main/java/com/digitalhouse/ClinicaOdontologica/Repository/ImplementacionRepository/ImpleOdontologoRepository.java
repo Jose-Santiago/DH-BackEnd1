@@ -16,7 +16,7 @@ import java.util.List;
 public class ImpleOdontologoRepository implements IDao<Odontologo> {
     private static final Logger logger = LogManager.getLogger(ImpleOdontologoRepository.class);
 
-    private static final String SQL_INSERT_ODONTOLOGO = "INSERT INTO ODONTOLOGOS(MATRICULA, NOMBRE, APELLIDO) VALUES(?,?,?);";
+    private static final String SQL_INSERT_ODONTOLOGO = "INSERT INTO ODONTOLOGOS (MATRICULA, NOMBRE, APELLIDO) VALUES(?,?,?)";
     private static final String SQL_OBTENER_ODONTOLOGOS = "SELECT * FROM ODONTOLOGOS";
     private static final String SQL_SELECT_ONE = "SELECT * FROM ODONTOLOGOS WHERE ID = ?";
     private static final String SQL_DELETE_ODONTOLOGO = "DELETE FROM ODONTOLOGOS WHERE ID = ?";
@@ -31,14 +31,15 @@ public class ImpleOdontologoRepository implements IDao<Odontologo> {
             Connection connection = BDH2.getConnection();
             PreparedStatement psInsert = connection.prepareStatement(SQL_INSERT_ODONTOLOGO, Statement.RETURN_GENERATED_KEYS);
 
-            psInsert.setInt(1,odontologo.getMatricula());
+            psInsert.setString(1,odontologo.getMatricula());
             psInsert.setString(2, odontologo.getNombre());
             psInsert.setString(3, odontologo.getApellido());
             psInsert.execute();
             logger.info("Datos de Odotologo guardados con Exito");
-            psInsert.execute();
             ResultSet resultSet = psInsert.getGeneratedKeys();
-            while (resultSet.next()) odontologo.setId(resultSet.getInt("ID"));
+            while (resultSet.next()) {
+                odontologo.setId(resultSet.getInt(1));
+            }
 
         } catch (Exception e) {
             odontologo = null;
@@ -56,13 +57,22 @@ public class ImpleOdontologoRepository implements IDao<Odontologo> {
             PreparedStatement psBuscarID = connection.prepareStatement(SQL_SELECT_ONE);
             psBuscarID.setInt(1,id);
             ResultSet resultado = psBuscarID.executeQuery();
-            while (resultado.next()){
-                odontologo = new Odontologo(resultado.getInt("ID"), resultado.getInt("MATRICULA"), resultado.getString("NOMBRE"), resultado.getString("APELLIDO") );
+            if (resultado.next()){
+                odontologo = new Odontologo(resultado.getInt("ID"), resultado.getString("MATRICULA"), resultado.getString("NOMBRE"), resultado.getString("APELLIDO") );
+                logger.info("Odontologo encontrado con exito id: {}", id);
+            }else {
+                logger.info("Odontologo No encontrado con id: {}", id);
             }
+
         } catch (Exception e) {
             logger.error("Error al buscar por id a un odontologo: {}", e.getMessage());
         }
         return odontologo;
+    }
+
+    @Override
+    public Odontologo buscarPorString(String string) {
+        return null;
     }
 
     @Override
@@ -71,7 +81,7 @@ public class ImpleOdontologoRepository implements IDao<Odontologo> {
         try {
             Connection connection = BDH2.getConnection();
             PreparedStatement psActualizar = connection.prepareStatement(SQL_UPDATE_ODONTOLOGO);
-            psActualizar.setInt(1, odontologo.getMatricula());
+            psActualizar.setString(1, odontologo.getMatricula());
             psActualizar.setString(2, odontologo.getNombre());
             psActualizar.setString(3, odontologo.getApellido());
             psActualizar.setInt(4, odontologo.getId());
@@ -105,7 +115,7 @@ public class ImpleOdontologoRepository implements IDao<Odontologo> {
             PreparedStatement psObtener = connection.prepareStatement(SQL_OBTENER_ODONTOLOGOS);
             ResultSet resultSet = psObtener.executeQuery();
             while (resultSet.next()){
-                listaOdontologos.add(new Odontologo(resultSet.getInt("ID"), resultSet.getInt("MATRICULA"), resultSet.getString("NOMBRE"), resultSet.getString("APELLIDO")));
+                listaOdontologos.add(new Odontologo(resultSet.getInt("ID"), resultSet.getString("MATRICULA"), resultSet.getString("NOMBRE"), resultSet.getString("APELLIDO")));
             }
             logger.info("se obtuvieron todos los odontologos de la Base de Datos");
         } catch (Exception e) {

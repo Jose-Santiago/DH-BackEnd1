@@ -1,5 +1,6 @@
 package com.digitalhouse.ClinicaOdontologica.Service;
 
+import com.digitalhouse.ClinicaOdontologica.Repository.IDao;
 import com.digitalhouse.ClinicaOdontologica.Repository.ImplementacionRepository.ImplePacienteRepository;
 import com.digitalhouse.ClinicaOdontologica.Model.Paciente;
 import org.springframework.stereotype.Service;
@@ -8,7 +9,7 @@ import java.util.List;
 
 @Service
 public class ServicioPaciente {
-    private final ImplePacienteRepository pacienteRepository;
+    private final IDao<Paciente> pacienteRepository;
 
     public ServicioPaciente() {
         pacienteRepository = new ImplePacienteRepository();

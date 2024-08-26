@@ -74,6 +74,7 @@ public class ImplePacienteRepository implements IDao<Paciente> {
         return paciente;
     }
 
+    @Override
     public Paciente buscarPorString(String string) {
         logger.info("Iniciando las Operaciones de busqueda : ${}", string);
         Paciente paciente = null;
@@ -164,7 +165,7 @@ public class ImplePacienteRepository implements IDao<Paciente> {
             }
             logger.info("Se obtuvieron todos los Pacientes de la base de datos");
         } catch (Exception e) {
-            logger.error("error de conexion al obtener todos los pacientes: ${}", e.getMessage());
+            logger.error("error de conexion al obtener todos los pacientes: {}", e.getMessage());
         }
         return todosLosPacientes;
     }

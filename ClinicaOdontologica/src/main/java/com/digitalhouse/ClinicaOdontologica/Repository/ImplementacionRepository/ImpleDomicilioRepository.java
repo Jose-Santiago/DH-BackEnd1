@@ -63,6 +63,11 @@ public class ImpleDomicilioRepository implements IDao<Domicilio> {
     }
 
     @Override
+    public Domicilio buscarPorString(String string) {
+        return null;
+    }
+
+    @Override
     public void actualizar(Domicilio domicilio) {
         logger.info("Iniciando Actuaizacion de un Domicilio con ID: {}", domicilio.getId());
         try {

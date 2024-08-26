@@ -2,16 +2,15 @@ package com.digitalhouse.ClinicaOdontologica.Service;
 
 import com.digitalhouse.ClinicaOdontologica.Model.Turno;
 import com.digitalhouse.ClinicaOdontologica.Repository.IDao;
-import com.digitalhouse.ClinicaOdontologica.Repository.ImplementacionRepository.ImpleOdontologoRepository;
-import com.digitalhouse.ClinicaOdontologica.Repository.ImplementacionRepository.ImpleTurnoRepositoryList;
+import com.digitalhouse.ClinicaOdontologica.Repository.ImplementacionRepository.ImpleTurnoRepository;
 
 import java.util.List;
 
 public class ServicioTurno {
-    private IDao<Turno> turnoIDao;
+    private final IDao<Turno> turnoIDao;
 
     public ServicioTurno() {
-        turnoIDao = new ImpleTurnoRepositoryList();
+        turnoIDao = new ImpleTurnoRepository();
     }
 
     public Turno guardarTurno(Turno turno){
