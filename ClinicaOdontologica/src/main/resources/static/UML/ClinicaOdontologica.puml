@@ -1,0 +1,40 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Odontologo{
+-id: Long
+-matricula: String
+-nombre: String
+-apellido: String
+}
+
+class Paciente{
+-id: Long
+-DNI: String
+-nombre: String
+-apellido: String
+-fecha_alta: LocalDate
+-domicilio: Domicilio
+-email: String
+}
+
+Paciente <--- Domicilio
+
+class Domicilio{
+-id: Long
+-calle: String
+-numero: Integer
+-localidad: String
+-provincia: String
+}
+Odontologo --u-> Turno
+Paciente --u-> Turno
+
+class Turno{
+-id: Long
+-paciente: Paciente
+-odontologo: Odontologo
+-fecha: LocalDateTime
+}
+
+@enduml

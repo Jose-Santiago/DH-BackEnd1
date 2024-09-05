@@ -13,18 +13,6 @@
     </Appenders>
 
     <Loggers>
-        <!-- Logger para la clase DBH2 -->
-        <Logger name="com.digitalhouse.ClinicaOdontologica.Repository.BDH2" level="info" additivity="false">
-            <AppenderRef ref="ConsoleAppender" />
-            <AppenderRef ref="FileAppender" />
-        </Logger>
-
-        <!-- Logger para la clase ImpleOdontologoDAO -->
-        <Logger name="com.digitalhouse.ClinicaOdontologica.Repository.ImplementacionRepository.ImpleOdontologoRepository" level="info" additivity="false">
-            <AppenderRef ref="ConsoleAppender" />
-            <AppenderRef ref="FileAppender" />
-        </Logger>
-
         <!-- Logger raíz que aplica a toda la aplicación -->
         <Root level="info">
             <!-- Referencia al appender de la consola -->

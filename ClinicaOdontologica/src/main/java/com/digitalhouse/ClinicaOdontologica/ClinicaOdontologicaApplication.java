@@ -1,15 +1,16 @@
 package com.digitalhouse.ClinicaOdontologica;
 
-import com.digitalhouse.ClinicaOdontologica.Repository.BDH2;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
+
 
 @SpringBootApplication
 public class ClinicaOdontologicaApplication {
 
 	public static void main(String[] args) {
+
+		// Especificar el archivo de configuración de Log4j 2
+		//System.setProperty("log4j.configurationFile","classpath:log4j2.xml");
 		SpringApplication.run(ClinicaOdontologicaApplication.class, args);
 	}
 
@@ -20,11 +21,12 @@ public class ClinicaOdontologicaApplication {
 
 	//despues de configurar devtools el postconstructor dejo de funcionar, pero el CommandLiner se ejecuta despues de que la app ha sido cargada
 	//asegura que el codigo se ejecute cada vez que la aplicacion arranca por el devtools
-	@Bean
-	public CommandLineRunner inicializar(){
-		return args -> {
-			BDH2.sqlCrearTabla();
-		};
-	}
+
+    // @Bean
+    // public CommandLineRunner inicializar(){
+    // 	return args -> {
+    // 		BDH2.sqlCrearTabla();
+    // 	};
+    // }
 
 }
