@@ -1,4 +1,5 @@
 window.addEventListener("load", function () {
+  const listaPacientes = null;
   (function () {
     // Capturamos el tbody de la tabla
     const tablaBody = document
@@ -14,6 +15,9 @@ window.addEventListener("load", function () {
     fetch(url, settings)
       .then((response) => response.json())
       .then((data) => {
+        listaPacientes = data;
+        console.log(data);
+
         for (paciente of data) {
           // Por cada paciente agregamos una fila al tbody
           let pacienteFila = tablaBody.insertRow();
@@ -77,6 +81,9 @@ window.addEventListener("load", function () {
             </td>
           `;
         }
+      })
+      .catch((err) => {
+        console.error("error de conexion con el Servidor: ", err);
       });
   })();
 });

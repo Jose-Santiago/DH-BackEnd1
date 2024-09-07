@@ -33,20 +33,29 @@ window.addEventListener("load", function () {
     fetch(url, settings)
       .then((response) => response.json())
       .then((data) => {
+        console.log(data);
+
         // mostramos la alerta de que se guardo el objeto
         let alerta = document.getElementById("alerta");
         alerta.textContent = "Paciente Agregado Correctamente";
         alerta.className =
           "mt-4 p-4 rounded-lg bg-green-100 text-green-700 border border-green-400";
         alerta.classList.remove("hidden");
-        formulario.reset(); // limpiamos el form
+        setTimeout(function () {
+          alerta.classList.add("hidden");
+          formulario.reset(); // limpiamos el form
+        }, 4000);
       })
       .catch((error) => {
-        let alerta = document.getElementById("alerta");
+        const alerta = document.getElementById("alerta");
         alerta.textContent = "Error, intente nuevamente";
         alerta.className =
           "mt-4 p-4 rounded-lg bg-red-100 text-red-700 border border-red-400";
         alerta.classList.remove("hidden");
+        setTimeout(function () {
+          alerta.classList.add("hidden");
+          formulario.reset(); // limpiamos el form
+        }, 4000);
       });
   });
 });

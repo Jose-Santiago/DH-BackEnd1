@@ -749,3 +749,576 @@ insert into pacientes (apellido,cedula,domicilio_id,email,fecha_ingreso,nombre,i
 [2024-09-04 21:43:08] [ WARN ] [DefaultHandlerExceptionResolver:247] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' is not supported]
 [2024-09-04 21:51:12] [ WARN ] [ExceptionHandlerExceptionResolver:247] Resolved [com.digitalhouse.ClinicaOdontologica.Exception.ResourceNotFoundException: Paciente no encontrado por ID]
 [2024-09-04 21:52:25] [ WARN ] [ExceptionHandlerExceptionResolver:247] Resolved [com.digitalhouse.ClinicaOdontologica.Exception.ResourceNotFoundException: Paciente no encontrado por ID]
+[2024-09-04 22:18:45] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-04 22:18:45] [ WARN ] [DisposableBeanAdapter:221] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+[2024-09-04 22:18:45] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-04 22:18:45] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
+[2024-09-05 08:40:11] [ INFO ] [ClinicaOdontologicaApplication:50] Starting ClinicaOdontologicaApplication using Java 22.0.2 with PID 728102 (/home/hackj/Digital-House/Backend1/ClinicaOdontologica/target/classes started by hackj in /home/hackj/Digital-House/Backend1/ClinicaOdontologica)
+[2024-09-05 08:40:11] [ INFO ] [ClinicaOdontologicaApplication:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-05 08:40:11] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-05 08:40:11] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-05 08:40:12] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-05 08:40:12] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 33 ms. Found 3 JPA repository interfaces.
+[2024-09-05 08:40:12] [ INFO ] [TomcatWebServer:111] Tomcat initialized with port 8080 (http)
+[2024-09-05 08:40:12] [ INFO ] [Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-05 08:40:12] [ INFO ] [StandardService:173] Starting service [Tomcat]
+[2024-09-05 08:40:12] [ INFO ] [StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.26]
+[2024-09-05 08:40:12] [ INFO ] [[/]:173] Initializing Spring embedded WebApplicationContext
+[2024-09-05 08:40:12] [ INFO ] [ServletWebServerApplicationContext:296] Root WebApplicationContext: initialization completed in 907 ms
+[2024-09-05 08:40:12] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-05 08:40:12] [ INFO ] [HikariPool:554] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-05 08:40:12] [ INFO ] [HikariDataSource:122] HikariPool-1 - Start completed.
+[2024-09-05 08:40:12] [ INFO ] [H2ConsoleAutoConfiguration:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:BD_clinicaOdontologica'
+[2024-09-05 08:40:12] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-05 08:40:12] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-05 08:40:12] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-05 08:40:13] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-05 08:40:13] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-05 08:40:13] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-05 08:40:13] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-05 08:40:13] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-05 08:40:14] [ INFO ] [OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+[2024-09-05 08:40:14] [ INFO ] [Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-05 08:40:14] [ INFO ] [TomcatWebServer:243] Tomcat started on port 8080 (http) with context path '/'
+[2024-09-05 08:40:14] [ INFO ] [ClinicaOdontologicaApplication:56] Started ClinicaOdontologicaApplication in 2.885 seconds (process running for 3.516)
+[2024-09-05 08:40:29] [ INFO ] [[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-09-05 08:40:29] [ INFO ] [DispatcherServlet:532] Initializing Servlet 'dispatcherServlet'
+[2024-09-05 08:40:29] [ INFO ] [DispatcherServlet:554] Completed initialization in 1 ms
+[2024-09-05 09:14:48] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-05 09:14:48] [ WARN ] [DisposableBeanAdapter:221] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+[2024-09-05 09:14:48] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-05 09:14:48] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
+[2024-09-05 22:54:32] [ INFO ] [ClinicaOdontologicaApplication:50] Starting ClinicaOdontologicaApplication using Java 22.0.2 with PID 3594729 (/home/hackj/Digital-House/Backend1/ClinicaOdontologica/target/classes started by hackj in /home/hackj/Digital-House/Backend1/ClinicaOdontologica)
+[2024-09-05 22:54:32] [ INFO ] [ClinicaOdontologicaApplication:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-05 22:54:32] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-05 22:54:32] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-05 22:54:32] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-05 22:54:32] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 37 ms. Found 3 JPA repository interfaces.
+[2024-09-05 22:54:33] [ INFO ] [TomcatWebServer:111] Tomcat initialized with port 8080 (http)
+[2024-09-05 22:54:33] [ INFO ] [Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-05 22:54:33] [ INFO ] [StandardService:173] Starting service [Tomcat]
+[2024-09-05 22:54:33] [ INFO ] [StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.26]
+[2024-09-05 22:54:33] [ INFO ] [[/]:173] Initializing Spring embedded WebApplicationContext
+[2024-09-05 22:54:33] [ INFO ] [ServletWebServerApplicationContext:296] Root WebApplicationContext: initialization completed in 881 ms
+[2024-09-05 22:54:33] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-05 22:54:33] [ INFO ] [HikariPool:554] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-05 22:54:33] [ INFO ] [HikariDataSource:122] HikariPool-1 - Start completed.
+[2024-09-05 22:54:33] [ INFO ] [H2ConsoleAutoConfiguration:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:BD_clinicaOdontologica'
+[2024-09-05 22:54:33] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-05 22:54:33] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-05 22:54:33] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-05 22:54:33] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-05 22:54:34] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-05 22:54:34] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-05 22:54:34] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-05 22:54:34] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-05 22:54:34] [ INFO ] [OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+[2024-09-05 22:54:34] [ INFO ] [Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-05 22:54:34] [ INFO ] [TomcatWebServer:243] Tomcat started on port 8080 (http) with context path '/'
+[2024-09-05 22:54:34] [ INFO ] [ClinicaOdontologicaApplication:56] Started ClinicaOdontologicaApplication in 2.689 seconds (process running for 3.282)
+[2024-09-05 22:54:42] [ INFO ] [[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-09-05 22:54:42] [ INFO ] [DispatcherServlet:532] Initializing Servlet 'dispatcherServlet'
+[2024-09-05 22:54:42] [ INFO ] [DispatcherServlet:554] Completed initialization in 1 ms
+[2024-09-05 22:57:22] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-05 22:57:22] [ WARN ] [DisposableBeanAdapter:221] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+[2024-09-05 22:57:22] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-05 22:57:22] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
+[2024-09-05 22:57:25] [ INFO ] [ClinicaOdontologicaApplication:50] Starting ClinicaOdontologicaApplication using Java 22.0.2 with PID 3611474 (/home/hackj/Digital-House/Backend1/ClinicaOdontologica/target/classes started by hackj in /home/hackj/Digital-House/Backend1/ClinicaOdontologica)
+[2024-09-05 22:57:25] [ INFO ] [ClinicaOdontologicaApplication:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-05 22:57:25] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-05 22:57:25] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-05 22:57:26] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-05 22:57:26] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 38 ms. Found 3 JPA repository interfaces.
+[2024-09-05 22:57:26] [ INFO ] [TomcatWebServer:111] Tomcat initialized with port 8080 (http)
+[2024-09-05 22:57:26] [ INFO ] [Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-05 22:57:26] [ INFO ] [StandardService:173] Starting service [Tomcat]
+[2024-09-05 22:57:26] [ INFO ] [StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.26]
+[2024-09-05 22:57:26] [ INFO ] [[/]:173] Initializing Spring embedded WebApplicationContext
+[2024-09-05 22:57:26] [ INFO ] [ServletWebServerApplicationContext:296] Root WebApplicationContext: initialization completed in 913 ms
+[2024-09-05 22:57:26] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-05 22:57:26] [ INFO ] [HikariPool:554] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-05 22:57:26] [ INFO ] [HikariDataSource:122] HikariPool-1 - Start completed.
+[2024-09-05 22:57:26] [ INFO ] [H2ConsoleAutoConfiguration:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:BD_clinicaOdontologica'
+[2024-09-05 22:57:26] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-05 22:57:27] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-05 22:57:27] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-05 22:57:27] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-05 22:57:27] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-05 22:57:27] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-05 22:57:28] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-05 22:57:28] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-05 22:57:28] [ INFO ] [OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+[2024-09-05 22:57:28] [ INFO ] [Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-05 22:57:28] [ INFO ] [TomcatWebServer:243] Tomcat started on port 8080 (http) with context path '/'
+[2024-09-05 22:57:28] [ INFO ] [ClinicaOdontologicaApplication:56] Started ClinicaOdontologicaApplication in 2.973 seconds (process running for 3.541)
+[2024-09-05 22:57:33] [ INFO ] [[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-09-05 22:57:33] [ INFO ] [DispatcherServlet:532] Initializing Servlet 'dispatcherServlet'
+[2024-09-05 22:57:33] [ INFO ] [DispatcherServlet:554] Completed initialization in 1 ms
+[2024-09-05 22:59:23] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-05 22:59:23] [ WARN ] [DisposableBeanAdapter:221] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+[2024-09-05 22:59:23] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-05 22:59:23] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
+[2024-09-06 12:44:44] [ INFO ] [ClinicaOdontologicaApplication:50] Starting ClinicaOdontologicaApplication using Java 22.0.2 with PID 1316780 (/home/hackj/Digital-House/Backend1/ClinicaOdontologica/target/classes started by hackj in /home/hackj/Digital-House/Backend1/ClinicaOdontologica)
+[2024-09-06 12:44:44] [ INFO ] [ClinicaOdontologicaApplication:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-06 12:44:44] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-06 12:44:44] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-06 12:44:45] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-06 12:44:45] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 33 ms. Found 3 JPA repository interfaces.
+[2024-09-06 12:44:45] [ INFO ] [TomcatWebServer:111] Tomcat initialized with port 8080 (http)
+[2024-09-06 12:44:45] [ INFO ] [Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-06 12:44:45] [ INFO ] [StandardService:173] Starting service [Tomcat]
+[2024-09-06 12:44:45] [ INFO ] [StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.26]
+[2024-09-06 12:44:45] [ INFO ] [[/]:173] Initializing Spring embedded WebApplicationContext
+[2024-09-06 12:44:45] [ INFO ] [ServletWebServerApplicationContext:296] Root WebApplicationContext: initialization completed in 960 ms
+[2024-09-06 12:44:45] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-06 12:44:45] [ INFO ] [HikariPool:554] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-06 12:44:45] [ INFO ] [HikariDataSource:122] HikariPool-1 - Start completed.
+[2024-09-06 12:44:45] [ INFO ] [H2ConsoleAutoConfiguration:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:BD_clinicaOdontologica'
+[2024-09-06 12:44:45] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-06 12:44:45] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-06 12:44:45] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-06 12:44:46] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-06 12:44:46] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-06 12:44:46] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-06 12:44:47] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-06 12:44:47] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-06 12:44:47] [ INFO ] [OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+[2024-09-06 12:44:47] [ INFO ] [Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-06 12:44:47] [ INFO ] [TomcatWebServer:243] Tomcat started on port 8080 (http) with context path '/'
+[2024-09-06 12:44:47] [ INFO ] [ClinicaOdontologicaApplication:56] Started ClinicaOdontologicaApplication in 3.175 seconds (process running for 3.858)
+[2024-09-06 12:44:53] [ INFO ] [[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-09-06 12:44:53] [ INFO ] [DispatcherServlet:532] Initializing Servlet 'dispatcherServlet'
+[2024-09-06 12:44:53] [ INFO ] [DispatcherServlet:554] Completed initialization in 1 ms
+[2024-09-06 12:49:17] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-06 12:49:17] [ WARN ] [DisposableBeanAdapter:221] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+[2024-09-06 12:49:17] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-06 12:49:17] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
+[2024-09-06 12:49:24] [ INFO ] [ClinicaOdontologicaApplication:50] Starting ClinicaOdontologicaApplication using Java 22.0.2 with PID 1343971 (/home/hackj/Digital-House/Backend1/ClinicaOdontologica/target/classes started by hackj in /home/hackj/Digital-House/Backend1/ClinicaOdontologica)
+[2024-09-06 12:49:24] [ INFO ] [ClinicaOdontologicaApplication:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-06 12:49:25] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-06 12:49:25] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-06 12:49:25] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-06 12:49:25] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 41 ms. Found 3 JPA repository interfaces.
+[2024-09-06 12:49:25] [ INFO ] [TomcatWebServer:111] Tomcat initialized with port 8080 (http)
+[2024-09-06 12:49:25] [ INFO ] [Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-06 12:49:25] [ INFO ] [StandardService:173] Starting service [Tomcat]
+[2024-09-06 12:49:25] [ INFO ] [StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.26]
+[2024-09-06 12:49:25] [ INFO ] [[/]:173] Initializing Spring embedded WebApplicationContext
+[2024-09-06 12:49:25] [ INFO ] [ServletWebServerApplicationContext:296] Root WebApplicationContext: initialization completed in 899 ms
+[2024-09-06 12:49:25] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-06 12:49:26] [ INFO ] [HikariPool:554] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-06 12:49:26] [ INFO ] [HikariDataSource:122] HikariPool-1 - Start completed.
+[2024-09-06 12:49:26] [ INFO ] [H2ConsoleAutoConfiguration:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:BD_clinicaOdontologica'
+[2024-09-06 12:49:26] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-06 12:49:26] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-06 12:49:26] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-06 12:49:26] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-06 12:49:27] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-06 12:49:27] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-06 12:49:27] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-06 12:49:27] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-06 12:49:27] [ INFO ] [OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+[2024-09-06 12:49:27] [ INFO ] [Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-06 12:49:27] [ INFO ] [TomcatWebServer:243] Tomcat started on port 8080 (http) with context path '/'
+[2024-09-06 12:49:27] [ INFO ] [ClinicaOdontologicaApplication:56] Started ClinicaOdontologicaApplication in 2.964 seconds (process running for 3.583)
+[2024-09-06 12:49:35] [ INFO ] [[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-09-06 12:49:35] [ INFO ] [DispatcherServlet:532] Initializing Servlet 'dispatcherServlet'
+[2024-09-06 12:49:35] [ INFO ] [DispatcherServlet:554] Completed initialization in 1 ms
+[2024-09-06 12:52:03] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-06 12:52:03] [ WARN ] [DisposableBeanAdapter:221] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+[2024-09-06 12:52:03] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-06 12:52:03] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
+[2024-09-06 14:47:02] [ INFO ] [ClinicaOdontologicaApplication:50] Starting ClinicaOdontologicaApplication using Java 22.0.2 with PID 1397617 (/home/hackj/Digital-House/Backend1/ClinicaOdontologica/target/classes started by hackj in /home/hackj/Digital-House/Backend1/ClinicaOdontologica)
+[2024-09-06 14:47:02] [ INFO ] [ClinicaOdontologicaApplication:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-06 14:47:02] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-06 14:47:02] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-06 14:47:02] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-06 14:47:02] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 41 ms. Found 3 JPA repository interfaces.
+[2024-09-06 14:47:03] [ INFO ] [TomcatWebServer:111] Tomcat initialized with port 8080 (http)
+[2024-09-06 14:47:03] [ INFO ] [Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-06 14:47:03] [ INFO ] [StandardService:173] Starting service [Tomcat]
+[2024-09-06 14:47:03] [ INFO ] [StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.26]
+[2024-09-06 14:47:03] [ INFO ] [[/]:173] Initializing Spring embedded WebApplicationContext
+[2024-09-06 14:47:03] [ INFO ] [ServletWebServerApplicationContext:296] Root WebApplicationContext: initialization completed in 1047 ms
+[2024-09-06 14:47:03] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-06 14:47:03] [ INFO ] [HikariPool:554] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-06 14:47:03] [ INFO ] [HikariDataSource:122] HikariPool-1 - Start completed.
+[2024-09-06 14:47:03] [ INFO ] [H2ConsoleAutoConfiguration:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:BD_clinicaOdontologica'
+[2024-09-06 14:47:03] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-06 14:47:03] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-06 14:47:03] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-06 14:47:03] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-06 14:47:04] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-06 14:47:04] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-06 14:47:04] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-06 14:47:04] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-06 14:47:05] [ INFO ] [OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+[2024-09-06 14:47:05] [ INFO ] [Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-06 14:47:05] [ INFO ] [TomcatWebServer:243] Tomcat started on port 8080 (http) with context path '/'
+[2024-09-06 14:47:05] [ INFO ] [ClinicaOdontologicaApplication:56] Started ClinicaOdontologicaApplication in 3.297 seconds (process running for 3.942)
+[2024-09-06 14:47:09] [ INFO ] [[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-09-06 14:47:09] [ INFO ] [DispatcherServlet:532] Initializing Servlet 'dispatcherServlet'
+[2024-09-06 14:47:09] [ INFO ] [DispatcherServlet:554] Completed initialization in 1 ms
+[2024-09-06 14:54:27] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-06 14:54:27] [ WARN ] [DisposableBeanAdapter:221] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+[2024-09-06 14:54:27] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-06 14:54:27] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
+[2024-09-06 14:54:31] [ INFO ] [ClinicaOdontologicaApplication:50] Starting ClinicaOdontologicaApplication using Java 22.0.2 with PID 1441125 (/home/hackj/Digital-House/Backend1/ClinicaOdontologica/target/classes started by hackj in /home/hackj/Digital-House/Backend1/ClinicaOdontologica)
+[2024-09-06 14:54:31] [ INFO ] [ClinicaOdontologicaApplication:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-06 14:54:31] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-06 14:54:31] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-06 14:54:32] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-06 14:54:32] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 46 ms. Found 3 JPA repository interfaces.
+[2024-09-06 14:54:32] [ INFO ] [TomcatWebServer:111] Tomcat initialized with port 8080 (http)
+[2024-09-06 14:54:33] [ INFO ] [Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-06 14:54:33] [ INFO ] [StandardService:173] Starting service [Tomcat]
+[2024-09-06 14:54:33] [ INFO ] [StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.26]
+[2024-09-06 14:54:33] [ INFO ] [[/]:173] Initializing Spring embedded WebApplicationContext
+[2024-09-06 14:54:33] [ INFO ] [ServletWebServerApplicationContext:296] Root WebApplicationContext: initialization completed in 1157 ms
+[2024-09-06 14:54:33] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-06 14:54:33] [ INFO ] [HikariPool:554] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-06 14:54:33] [ INFO ] [HikariDataSource:122] HikariPool-1 - Start completed.
+[2024-09-06 14:54:33] [ INFO ] [H2ConsoleAutoConfiguration:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:BD_clinicaOdontologica'
+[2024-09-06 14:54:33] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-06 14:54:33] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-06 14:54:33] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-06 14:54:33] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-06 14:54:34] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-06 14:54:34] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-06 14:54:34] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-06 14:54:34] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-06 14:54:35] [ INFO ] [OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+[2024-09-06 14:54:35] [ INFO ] [Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-06 14:54:35] [ INFO ] [TomcatWebServer:243] Tomcat started on port 8080 (http) with context path '/'
+[2024-09-06 14:54:35] [ INFO ] [ClinicaOdontologicaApplication:56] Started ClinicaOdontologicaApplication in 3.562 seconds (process running for 4.213)
+[2024-09-06 14:54:45] [ INFO ] [[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-09-06 14:54:45] [ INFO ] [DispatcherServlet:532] Initializing Servlet 'dispatcherServlet'
+[2024-09-06 14:54:45] [ INFO ] [DispatcherServlet:554] Completed initialization in 1 ms
+[2024-09-06 15:42:13] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-06 15:42:13] [ WARN ] [DisposableBeanAdapter:221] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+[2024-09-06 15:42:13] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-06 15:42:13] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
+[2024-09-07 05:46:04] [ INFO ] [ClinicaOdontologicaApplication:50] Starting ClinicaOdontologicaApplication using Java 22.0.2 with PID 2279707 (/home/hackj/Digital-House/Backend1/ClinicaOdontologica/target/classes started by hackj in /home/hackj/Digital-House/Backend1/ClinicaOdontologica)
+[2024-09-07 05:46:04] [ INFO ] [ClinicaOdontologicaApplication:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-07 05:46:04] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-07 05:46:04] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-07 05:46:04] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-07 05:46:04] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 39 ms. Found 3 JPA repository interfaces.
+[2024-09-07 05:46:05] [ INFO ] [TomcatWebServer:111] Tomcat initialized with port 8080 (http)
+[2024-09-07 05:46:05] [ INFO ] [Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-07 05:46:05] [ INFO ] [StandardService:173] Starting service [Tomcat]
+[2024-09-07 05:46:05] [ INFO ] [StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.26]
+[2024-09-07 05:46:05] [ INFO ] [[/]:173] Initializing Spring embedded WebApplicationContext
+[2024-09-07 05:46:05] [ INFO ] [ServletWebServerApplicationContext:296] Root WebApplicationContext: initialization completed in 847 ms
+[2024-09-07 05:46:05] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-07 05:46:06] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-07 05:46:06] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-07 05:46:06] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-07 05:46:06] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-07 05:46:06] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-07 05:46:07] [ WARN ] [JdbcEnvironmentInitiator:359] HHH000342: Could not obtain connection to query metadata
+java.lang.NullPointerException: Cannot invoke "org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(java.sql.SQLException, String)" because the return value of "org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.sqlExceptionHelper()" is null
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:290) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:123) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:77) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:221) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:189) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) [spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) [spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954) [spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) [spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) [spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) [spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) [spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) [spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) [spring-boot-3.3.2.jar:3.3.2]
+	at com.digitalhouse.ClinicaOdontologica.ClinicaOdontologicaApplication.main(ClinicaOdontologicaApplication.java:14) [classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) [spring-boot-devtools-3.3.2.jar:3.3.2]
+[2024-09-07 05:46:07] [ ERROR] [LocalContainerEntityManagerFactoryBean:426] Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+[2024-09-07 05:46:07] [ WARN ] [AnnotationConfigServletWebServerApplicationContext:633] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+[2024-09-07 05:46:07] [ INFO ] [StandardService:173] Stopping service [Tomcat]
+[2024-09-07 05:46:07] [ INFO ] [ConditionEvaluationReportLogger:82] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[2024-09-07 05:46:07] [ ERROR] [SpringApplication:859] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954) ~[spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) [spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) [spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) [spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) [spring-boot-3.3.2.jar:3.3.2]
+	at com.digitalhouse.ClinicaOdontologica.ClinicaOdontologicaApplication.main(ClinicaOdontologicaApplication.java:14) [classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) [spring-boot-devtools-3.3.2.jar:3.3.2]
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:276) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:221) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:189) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.11.jar:6.1.11]
+	... 18 more
+Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:191) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:87) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentWithDefaults(JdbcEnvironmentInitiator.java:152) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:362) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:123) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:77) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:221) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:189) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.11.jar:6.1.11]
+	... 18 more
+[2024-09-07 05:47:03] [ INFO ] [ClinicaOdontologicaApplication:50] Starting ClinicaOdontologicaApplication using Java 22.0.2 with PID 2285522 (/home/hackj/Digital-House/Backend1/ClinicaOdontologica/target/classes started by hackj in /home/hackj/Digital-House/Backend1/ClinicaOdontologica)
+[2024-09-07 05:47:03] [ INFO ] [ClinicaOdontologicaApplication:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-07 05:47:03] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-07 05:47:03] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-07 05:47:03] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-07 05:47:03] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 38 ms. Found 3 JPA repository interfaces.
+[2024-09-07 05:47:03] [ INFO ] [TomcatWebServer:111] Tomcat initialized with port 8080 (http)
+[2024-09-07 05:47:03] [ INFO ] [Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-07 05:47:03] [ INFO ] [StandardService:173] Starting service [Tomcat]
+[2024-09-07 05:47:03] [ INFO ] [StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.26]
+[2024-09-07 05:47:03] [ INFO ] [[/]:173] Initializing Spring embedded WebApplicationContext
+[2024-09-07 05:47:03] [ INFO ] [ServletWebServerApplicationContext:296] Root WebApplicationContext: initialization completed in 861 ms
+[2024-09-07 05:47:04] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-07 05:47:04] [ INFO ] [HikariPool:554] HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:BD_clinicaOdontologica user=SA
+[2024-09-07 05:47:04] [ INFO ] [HikariDataSource:122] HikariPool-1 - Start completed.
+[2024-09-07 05:47:04] [ INFO ] [H2ConsoleAutoConfiguration:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:BD_clinicaOdontologica'
+[2024-09-07 05:47:04] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-07 05:47:04] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-07 05:47:04] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-07 05:47:04] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-07 05:47:04] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-07 05:47:05] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-07 05:47:05] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-07 05:47:05] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-07 05:47:05] [ INFO ] [OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+[2024-09-07 05:47:05] [ INFO ] [Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-07 05:47:05] [ INFO ] [TomcatWebServer:243] Tomcat started on port 8080 (http) with context path '/'
+[2024-09-07 05:47:05] [ INFO ] [ClinicaOdontologicaApplication:56] Started ClinicaOdontologicaApplication in 2.757 seconds (process running for 3.322)
+[2024-09-07 05:47:11] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-07 05:47:11] [ WARN ] [DisposableBeanAdapter:221] Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+[2024-09-07 05:47:11] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-07 05:47:11] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
+[2024-09-07 05:50:38] [ INFO ] [ClinicaOdontologicaApplication:50] Starting ClinicaOdontologicaApplication using Java 22.0.2 with PID 2306462 (/home/hackj/Digital-House/Backend1/ClinicaOdontologica/target/classes started by hackj in /home/hackj/Digital-House/Backend1/ClinicaOdontologica)
+[2024-09-07 05:50:38] [ INFO ] [ClinicaOdontologicaApplication:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-07 05:50:38] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-07 05:50:38] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-07 05:50:38] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-07 05:50:38] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 30 ms. Found 3 JPA repository interfaces.
+[2024-09-07 05:50:39] [ INFO ] [TomcatWebServer:111] Tomcat initialized with port 8080 (http)
+[2024-09-07 05:50:39] [ INFO ] [Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-07 05:50:39] [ INFO ] [StandardService:173] Starting service [Tomcat]
+[2024-09-07 05:50:39] [ INFO ] [StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.26]
+[2024-09-07 05:50:39] [ INFO ] [[/]:173] Initializing Spring embedded WebApplicationContext
+[2024-09-07 05:50:39] [ INFO ] [ServletWebServerApplicationContext:296] Root WebApplicationContext: initialization completed in 817 ms
+[2024-09-07 05:50:39] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-07 05:50:40] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-07 05:50:40] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-07 05:50:40] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-07 05:50:40] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-07 05:50:40] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-07 05:50:41] [ WARN ] [JdbcEnvironmentInitiator:359] HHH000342: Could not obtain connection to query metadata
+java.lang.NullPointerException: Cannot invoke "org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(java.sql.SQLException, String)" because the return value of "org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.sqlExceptionHelper()" is null
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:290) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:123) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:77) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:221) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:189) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) [spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) [spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) [spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954) [spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) [spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) [spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) [spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) [spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) [spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) [spring-boot-3.3.2.jar:3.3.2]
+	at com.digitalhouse.ClinicaOdontologica.ClinicaOdontologicaApplication.main(ClinicaOdontologicaApplication.java:14) [classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) [spring-boot-devtools-3.3.2.jar:3.3.2]
+[2024-09-07 05:50:41] [ ERROR] [LocalContainerEntityManagerFactoryBean:426] Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+[2024-09-07 05:50:41] [ WARN ] [AnnotationConfigServletWebServerApplicationContext:633] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+[2024-09-07 05:50:41] [ INFO ] [StandardService:173] Stopping service [Tomcat]
+[2024-09-07 05:50:41] [ INFO ] [ConditionEvaluationReportLogger:82] 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[2024-09-07 05:50:41] [ ERROR] [SpringApplication:859] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954) ~[spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.11.jar:6.1.11]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) [spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) [spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) [spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) [spring-boot-3.3.2.jar:3.3.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) [spring-boot-3.3.2.jar:3.3.2]
+	at com.digitalhouse.ClinicaOdontologica.ClinicaOdontologicaApplication.main(ClinicaOdontologicaApplication.java:14) [classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) [spring-boot-devtools-3.3.2.jar:3.3.2]
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:276) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:221) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:189) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.11.jar:6.1.11]
+	... 18 more
+Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:191) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:87) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentWithDefaults(JdbcEnvironmentInitiator.java:152) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:362) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:123) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:77) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:221) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:189) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1431) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1502) ~[hibernate-core-6.5.2.Final.jar:6.5.2.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366) ~[spring-orm-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.11.jar:6.1.11]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.11.jar:6.1.11]
+	... 18 more
+[2024-09-07 05:52:11] [ INFO ] [ClinicaOdontologicaApplication:50] Starting ClinicaOdontologicaApplication using Java 22.0.2 with PID 2315715 (/home/hackj/Digital-House/Backend1/ClinicaOdontologica/target/classes started by hackj in /home/hackj/Digital-House/Backend1/ClinicaOdontologica)
+[2024-09-07 05:52:11] [ INFO ] [ClinicaOdontologicaApplication:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-07 05:52:11] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-07 05:52:11] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-07 05:52:11] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-07 05:52:11] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 29 ms. Found 3 JPA repository interfaces.
+[2024-09-07 05:52:11] [ INFO ] [TomcatWebServer:111] Tomcat initialized with port 8080 (http)
+[2024-09-07 05:52:11] [ INFO ] [Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-07 05:52:11] [ INFO ] [StandardService:173] Starting service [Tomcat]
+[2024-09-07 05:52:11] [ INFO ] [StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.26]
+[2024-09-07 05:52:11] [ INFO ] [[/]:173] Initializing Spring embedded WebApplicationContext
+[2024-09-07 05:52:11] [ INFO ] [ServletWebServerApplicationContext:296] Root WebApplicationContext: initialization completed in 824 ms
+[2024-09-07 05:52:12] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-07 05:52:12] [ INFO ] [HikariPool:554] HikariPool-1 - Added connection conn0: url=jdbc:h2:file:/home/hackj/Digital-House/Backend1/ClinicaOdontologica/BD/BD_clinicaOdontologica user=SA
+[2024-09-07 05:52:12] [ INFO ] [HikariDataSource:122] HikariPool-1 - Start completed.
+[2024-09-07 05:52:12] [ INFO ] [H2ConsoleAutoConfiguration:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:/home/hackj/Digital-House/Backend1/ClinicaOdontologica/BD/BD_clinicaOdontologica'
+[2024-09-07 05:52:12] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-07 05:52:12] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-07 05:52:12] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-07 05:52:12] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-07 05:52:13] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-07 05:52:13] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-07 05:52:13] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-07 05:52:13] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-07 05:52:13] [ INFO ] [OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+[2024-09-07 05:52:13] [ INFO ] [Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-07 05:52:13] [ INFO ] [TomcatWebServer:243] Tomcat started on port 8080 (http) with context path '/'
+[2024-09-07 05:52:13] [ INFO ] [ClinicaOdontologicaApplication:56] Started ClinicaOdontologicaApplication in 2.874 seconds (process running for 3.434)
+[2024-09-07 05:52:43] [ INFO ] [[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-09-07 05:52:43] [ INFO ] [DispatcherServlet:532] Initializing Servlet 'dispatcherServlet'
+[2024-09-07 05:52:43] [ INFO ] [DispatcherServlet:554] Completed initialization in 1 ms
+[2024-09-07 05:59:29] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-07 05:59:29] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-07 05:59:30] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
