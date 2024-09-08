@@ -47,7 +47,7 @@ public class TurnoController {
             return new ResponseEntity<>("Turno actualizado Correctamente", HttpStatus.OK);
         }
         //return new ResponseEntity<>("Turno no encontrado", HttpStatus.NOT_FOUND);
-        throw new BadRequestException("Turno no encontrados por ID");
+        throw new BadRequestException("Turno no encontrado por ID");
     }
 
     @GetMapping("/buscar/{id}")
@@ -78,7 +78,7 @@ public class TurnoController {
             return new ResponseEntity<>("Turno eliminado con Exito", HttpStatus.OK);
         }
         //return new ResponseEntity<>("Turno no encontrado", HttpStatus.NOT_FOUND);
-        throw new BadRequestException("Turno no encontrados por ID");
+        throw new BadRequestException("Turno no encontrado por ID");
     }
 
 }

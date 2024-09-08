@@ -1,6 +1,6 @@
 //variables globales para eliminar y actualizar pacientes.
-let pacienteAActualizar = 0;
-let pacienteAEliminar = 0;
+//let pacienteAActualizar = 0;
+//let pacienteAEliminar = 0;
 
 //funcion para consumo de la API
 async function listarPacientes() {
@@ -96,21 +96,30 @@ async function listarPacientes() {
 
   if (!tablaVacia) {
     agregarEventoBtnEditar(); //agregamos el evento clik a los botones actualizar
+    agregarEventoBtnEliminar(); //agregamos el evento clik a los botones eliminar
   }
 }
 
 function agregarEventoBtnEditar() {
   //capturamos todos los botones con clase actualizar que existan en el DOM
   const btnsEditar = document.querySelectorAll(".btnEditar");
-
-  console.log(btnsEditar);
-
   btnsEditar.forEach((boton) => {
     boton.addEventListener("click", (evento) => {
       const idPacienteAActualizar = boton.getAttribute("data-target");
       console.log(" el ID del boton a actualizar es: ", idPacienteAActualizar);
-      //pacienteAActualizar = idPacienteAActualizar;
       buscarPaciente(idPacienteAActualizar);
+    });
+  });
+}
+
+function agregarEventoBtnEliminar() {
+  //capturamos todos los botones con clase actualizar que existan en el DOM
+  const btnsEliminar = document.querySelectorAll(".btnEliminar");
+  btnsEliminar.forEach((boton) => {
+    boton.addEventListener("click", (evento) => {
+      const idPacienteAEliminar = boton.getAttribute("data-target");
+      console.log(" el ID del boton a eliminar es: ", idPacienteAEliminar);
+      eliminarPaciente(idPacienteAEliminar);
     });
   });
 }
@@ -118,7 +127,6 @@ function agregarEventoBtnEditar() {
 function mostrarFormActualizacion() {
   //capturamos el DOM
   const seccionForm = document.getElementById("seccion_form");
-  console.log(seccionForm);
   seccionForm.classList.remove("hidden"); // mostramos el form
 }
 
@@ -130,12 +138,13 @@ async function buscarPaciente(id) {
   };
 
   try {
-    //llamamos a la API con lso Datos
+    //llamamos a la API con los Datos
     const response = await fetch(URL_BUSCAR_PACIENTE, settings);
     if (!response.ok) {
       throw new Error("Error en la solicitud fetch buscar paciente id: ", id);
     }
     const pacienteData = await response.json();
+
     if (pacienteData) {
       // mostramos la seccion de formlualrio para actualizar
       mostrarFormActualizacion();
@@ -153,13 +162,15 @@ async function buscarPaciente(id) {
         pacienteData.domicilio.localidad;
       document.getElementById("provincia").value =
         pacienteData.domicilio.provincia;
-      // capturo el boton actualizar y cancelar
+      // capturamos la seccion y el formulario
       const seccionForm = document.getElementById("seccion_form");
       const formActualizacion = document.getElementById("actualizar_paciente");
+      //capturo el boton cancelar y el submit del form
       const btnCancelar = document.getElementById("btn_cancelar");
       formActualizacion.addEventListener("submit", function (evento) {
         evento.preventDefault();
         console.log("se llama al metodo de actualizar paciente con el objeto");
+        actualizarPaciente(pacienteData);
       });
       btnCancelar.addEventListener("click", (evento) => {
         console.log("reseteamos el form y se oculta");
@@ -170,6 +181,93 @@ async function buscarPaciente(id) {
     }
   } catch (error) {
     console.error("error en la solicitud: ", error);
+  }
+}
+
+async function actualizarPaciente(paciente) {
+  //creamos el objeto JSON con los datos del form
+  const pacienteAActualizar = {
+    id: paciente.id,
+    nombre: document.getElementById("nombre").value,
+    apellido: document.getElementById("apellido").value,
+    cedula: document.getElementById("cedula").value,
+    email: document.getElementById("email").value,
+    fechaIngreso: document.getElementById("fecha-ingreso").value,
+    domicilio: {
+      id: paciente.domicilio.id,
+      calle: document.getElementById("calle").value,
+      numero: parseInt(document.getElementById("numero").value),
+      localidad: document.getElementById("localidad").value,
+      provincia: document.getElementById("provincia").value,
+    },
+  };
+  //url al ENDPOINT
+  const URL_ACTUALIZAR_PACIENTE = "/paciente";
+  const settings = {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(pacienteAActualizar),
+  };
+
+  //capturamos la alerta del form
+  const alerta = document.getElementById("alerta");
+
+  try {
+    const response = await fetch(URL_ACTUALIZAR_PACIENTE, settings);
+    console.log(response);
+
+    if (!response.ok) {
+      //lanzamos alerta negativa
+      alerta.textContent = "Error, intente nuevamente";
+      alerta.className =
+        "mt-4 p-4 rounded-lg bg-red-100 text-red-700 border border-red-400";
+      alerta.classList.remove("hidden");
+      setTimeout(function () {
+        alerta.classList.add("hidden");
+        window.location.reload();
+      }, 4000);
+
+      throw new Error("Error al actualizar paciente: ", id);
+    }
+    const responseBody = await response.text();
+    //lanzamos alerta positiva
+    alerta.textContent = responseBody;
+    alerta.className =
+      "mt-4 p-4 rounded-lg bg-green-100 text-green-700 border border-green-400";
+    alerta.classList.remove("hidden");
+    setTimeout(function () {
+      alerta.classList.add("hidden");
+      window.location.reload();
+    }, 4000);
+  } catch (error) {
+    console.error("Error: ", error);
+  }
+}
+
+async function eliminarPaciente(id) {
+  //datos para el endpoint
+  const URL_ELIMINAR_PACIENTE = `/paciente/${id}`;
+  const settings = {
+    method: "DELETE",
+  };
+
+  try {
+    const response = await fetch(URL_ELIMINAR_PACIENTE, settings);
+    console.log(response);
+
+    if (!response.ok) {
+      //lanzamos alerta negativa
+      window.alert("No se pudo eliminar el Paciente, intenta nuevamente.");
+      throw new Error("Error al eliminar paciente: ", id);
+    }
+    const responseBody = await response.text();
+    //lanzamos alerta positiva
+    window.alert(responseBody);
+    window.location.reload();
+  } catch (error) {
+    console.error("Error al eliminar paciente: ", error);
   }
 }
 
