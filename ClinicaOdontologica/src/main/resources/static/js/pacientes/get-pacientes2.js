@@ -1,7 +1,3 @@
-//variables globales para eliminar y actualizar pacientes.
-//let pacienteAActualizar = 0;
-//let pacienteAEliminar = 0;
-
 //funcion para consumo de la API
 async function listarPacientes() {
   //capturamos el DOM, en este caso el body de la tabla

@@ -168,3 +168,37 @@
 [2024-09-08 16:41:38] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
 [2024-09-08 16:41:38] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
 [2024-09-08 16:41:38] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
+[2024-09-08 22:55:25] [ INFO ] [ClinicaOdontologicaApplication:50] Starting ClinicaOdontologicaApplication using Java 22.0.2 with PID 3960810 (/home/hackj/Digital-House/Backend1/ClinicaOdontologica/target/classes started by hackj in /home/hackj/Digital-House/Backend1/ClinicaOdontologica)
+[2024-09-08 22:55:25] [ INFO ] [ClinicaOdontologicaApplication:654] No active profile set, falling back to 1 default profile: "default"
+[2024-09-08 22:55:25] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[2024-09-08 22:55:25] [ INFO ] [DevToolsPropertyDefaultsPostProcessor:252] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[2024-09-08 22:55:25] [ INFO ] [RepositoryConfigurationDelegate:143] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2024-09-08 22:55:25] [ INFO ] [RepositoryConfigurationDelegate:211] Finished Spring Data repository scanning in 43 ms. Found 3 JPA repository interfaces.
+[2024-09-08 22:55:26] [ INFO ] [TomcatWebServer:111] Tomcat initialized with port 8080 (http)
+[2024-09-08 22:55:26] [ INFO ] [Http11NioProtocol:173] Initializing ProtocolHandler ["http-nio-8080"]
+[2024-09-08 22:55:26] [ INFO ] [StandardService:173] Starting service [Tomcat]
+[2024-09-08 22:55:26] [ INFO ] [StandardEngine:173] Starting Servlet engine: [Apache Tomcat/10.1.26]
+[2024-09-08 22:55:26] [ INFO ] [[/]:173] Initializing Spring embedded WebApplicationContext
+[2024-09-08 22:55:26] [ INFO ] [ServletWebServerApplicationContext:296] Root WebApplicationContext: initialization completed in 1060 ms
+[2024-09-08 22:55:26] [ INFO ] [HikariDataSource:109] HikariPool-1 - Starting...
+[2024-09-08 22:55:26] [ INFO ] [HikariPool:554] HikariPool-1 - Added connection conn0: url=jdbc:h2:file:/home/hackj/Digital-House/Backend1/ClinicaOdontologica/BD/BD_clinicaOdontologica user=SA
+[2024-09-08 22:55:26] [ INFO ] [HikariDataSource:122] HikariPool-1 - Start completed.
+[2024-09-08 22:55:26] [ INFO ] [H2ConsoleAutoConfiguration:88] H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:/home/hackj/Digital-House/Backend1/ClinicaOdontologica/BD/BD_clinicaOdontologica'
+[2024-09-08 22:55:26] [ INFO ] [LogHelper:31] HHH000204: Processing PersistenceUnitInfo [name: default]
+[2024-09-08 22:55:26] [ INFO ] [Version:44] HHH000412: Hibernate ORM core version 6.5.2.Final
+[2024-09-08 22:55:26] [ INFO ] [RegionFactoryInitiator:50] HHH000026: Second-level cache disabled
+[2024-09-08 22:55:27] [ INFO ] [SpringPersistenceUnitInfo:87] No LoadTimeWeaver setup: ignoring JPA class transformer
+[2024-09-08 22:55:27] [ INFO ] [JtaPlatformInitiator:59] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[2024-09-08 22:55:27] [ INFO ] [LocalContainerEntityManagerFactoryBean:437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-08 22:55:28] [ WARN ] [JpaBaseConfiguration$JpaWebConfiguration:236] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2024-09-08 22:55:28] [ INFO ] [WelcomePageHandlerMapping:59] Adding welcome page: class path resource [static/index.html]
+[2024-09-08 22:55:28] [ INFO ] [OptionalLiveReloadServer:59] LiveReload server is running on port 35729
+[2024-09-08 22:55:28] [ INFO ] [Http11NioProtocol:173] Starting ProtocolHandler ["http-nio-8080"]
+[2024-09-08 22:55:28] [ INFO ] [TomcatWebServer:243] Tomcat started on port 8080 (http) with context path '/'
+[2024-09-08 22:55:28] [ INFO ] [ClinicaOdontologicaApplication:56] Started ClinicaOdontologicaApplication in 3.307 seconds (process running for 3.953)
+[2024-09-08 22:55:37] [ INFO ] [[/]:173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2024-09-08 22:55:37] [ INFO ] [DispatcherServlet:532] Initializing Servlet 'dispatcherServlet'
+[2024-09-08 22:55:37] [ INFO ] [DispatcherServlet:554] Completed initialization in 1 ms
+[2024-09-08 23:12:14] [ INFO ] [LocalContainerEntityManagerFactoryBean:650] Closing JPA EntityManagerFactory for persistence unit 'default'
+[2024-09-08 23:12:14] [ INFO ] [HikariDataSource:349] HikariPool-1 - Shutdown initiated...
+[2024-09-08 23:12:14] [ INFO ] [HikariDataSource:351] HikariPool-1 - Shutdown completed.
