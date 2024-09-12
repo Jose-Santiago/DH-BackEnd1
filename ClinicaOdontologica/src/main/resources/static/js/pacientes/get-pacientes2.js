@@ -109,7 +109,7 @@ function agregarEventoBtnEditar() {
 }
 
 function agregarEventoBtnEliminar() {
-  //capturamos todos los botones con clase actualizar que existan en el DOM
+  //capturamos todos los botones con clase btnEliminar que existan en el DOM
   const btnsEliminar = document.querySelectorAll(".btnEliminar");
   btnsEliminar.forEach((boton) => {
     boton.addEventListener("click", (evento) => {
@@ -225,7 +225,7 @@ async function actualizarPaciente(paciente) {
         window.location.reload();
       }, 4000);
 
-      throw new Error("Error al actualizar paciente: ", id);
+      throw new Error("Error al actualizar paciente: ");
     }
     const responseBody = await response.text();
     //lanzamos alerta positiva

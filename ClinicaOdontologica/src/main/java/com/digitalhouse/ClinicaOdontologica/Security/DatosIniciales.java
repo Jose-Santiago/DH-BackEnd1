@@ -1,9 +1,7 @@
 package com.digitalhouse.ClinicaOdontologica.Security;
 
-import com.digitalhouse.ClinicaOdontologica.Entity.Domicilio;
-import com.digitalhouse.ClinicaOdontologica.Entity.Paciente;
-import com.digitalhouse.ClinicaOdontologica.Entity.Usuario;
-import com.digitalhouse.ClinicaOdontologica.Entity.UsuarioRole;
+import com.digitalhouse.ClinicaOdontologica.Entity.*;
+import com.digitalhouse.ClinicaOdontologica.Repository.IOdontologoRepository;
 import com.digitalhouse.ClinicaOdontologica.Repository.IPacienteRepository;
 import com.digitalhouse.ClinicaOdontologica.Repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,6 +20,8 @@ public class DatosIniciales implements ApplicationRunner {
     BCryptPasswordEncoder bCryptPasswordEncoder;
     @Autowired
     IPacienteRepository pacienteRepository;
+    @Autowired
+    IOdontologoRepository odontologoRepository;
 
     @Override
     public void run(ApplicationArguments args) throws Exception {
@@ -51,5 +51,13 @@ public class DatosIniciales implements ApplicationRunner {
         paciente.setDomicilio(domicilio);
 
         pacienteRepository.save(paciente);
+
+        // creamos un nuevo odontologo
+        Odontologo odontologo = new Odontologo();
+        odontologo.setNombre("lucia");
+        odontologo.setApellido("Pablo");
+        odontologo.setMatricula("pab123");
+
+        odontologoRepository.save(odontologo);
     }
 }

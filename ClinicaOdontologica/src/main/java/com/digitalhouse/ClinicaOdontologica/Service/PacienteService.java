@@ -57,4 +57,18 @@ public class PacienteService {
         return pacienteDTO;
     }
 
+    public Paciente pacienteDTOAPaciente(PacienteDTO pacienteDTO){
+        Optional<Paciente> pacienteBuscado = IPacienteRepository.findById(pacienteDTO.getId());
+        Paciente paciente = new Paciente();
+        if (pacienteBuscado.isPresent()){
+            paciente.setId(pacienteBuscado.get().getId());
+            paciente.setNombre(pacienteBuscado.get().getNombre());
+            paciente.setApellido(pacienteBuscado.get().getApellido());
+            paciente.setCedula(pacienteBuscado.get().getCedula());
+            paciente.setFechaIngreso(pacienteBuscado.get().getFechaIngreso());
+            paciente.setDomicilio(pacienteBuscado.get().getDomicilio());
+            paciente.setEmail(pacienteBuscado.get().getEmail());
+        }
+        return paciente;
+    }
 }
