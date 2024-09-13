@@ -31,7 +31,7 @@ public class ConfigWebSecurity{
         return provider;
     }
     //ahora necesitamos otorgan las autorizaciones
-    @Bean
+    /*@Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception{
         http
                 .csrf(AbstractHttpConfigurer::disable)
@@ -41,8 +41,28 @@ public class ConfigWebSecurity{
                         //permitimos que el user ADMIN pueda consumir todos los endpoints
                         .requestMatchers("/paciente/**", "/odontologo/**", "/turno/**").hasAuthority("ROLE_ADMIN")
                         //Permitimos que el Usuario USER solo pueda trabajar con los turnos
-                        .requestMatchers("/turno/**").hasAuthority("ROLE_USER")
+                        .requestMatchers("/odontologo/buscar/**","/paciente/buscar/**","/turno/**").hasAuthority("ROLE_USER")
                         //Cualquier otro Endpoint requiere autenticacion.
+                        .anyRequest().authenticated()
+                )
+                .formLogin(withDefaults())
+                .logout(withDefaults());
+        return http.build();
+    } */
+
+    //el orden de las autorizaciones tambien afectan a las mismas. primero las mas especificas y luego las mas generales
+    @Bean
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+        http
+                .csrf(AbstractHttpConfigurer::disable)
+                .authorizeHttpRequests((authz) -> authz
+                        // Permitir acceso a la página principal index.html para todos
+                        .requestMatchers("/").permitAll()
+                        // Permitir que el USER pueda trabajar con los turnos y buscar pacientes/odontólogos
+                        .requestMatchers("/turno/**", "/odontologo/buscar/**", "/paciente/buscar/**").hasAuthority("ROLE_USER")
+                        // Permitir que el ADMIN pueda acceder a todos los endpoints
+                        .requestMatchers("/paciente/**", "/odontologo/**", "/turno/**").hasAuthority("ROLE_ADMIN")
+                        // Cualquier otro endpoint requiere autenticación
                         .anyRequest().authenticated()
                 )
                 .formLogin(withDefaults())
