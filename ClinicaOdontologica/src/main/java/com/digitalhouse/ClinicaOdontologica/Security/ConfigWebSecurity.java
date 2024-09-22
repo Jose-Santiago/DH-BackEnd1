@@ -51,7 +51,7 @@ public class ConfigWebSecurity{
     } */
 
     //el orden de las autorizaciones tambien afectan a las mismas. primero las mas especificas y luego las mas generales
-    @Bean
+    /* @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .csrf(AbstractHttpConfigurer::disable)
@@ -62,6 +62,26 @@ public class ConfigWebSecurity{
                         .requestMatchers("/turno/**", "/odontologo/buscar/**", "/paciente/buscar/**").hasAuthority("ROLE_USER")
                         // Permitir que el ADMIN pueda acceder a todos los endpoints
                         .requestMatchers("/paciente/**", "/odontologo/**", "/turno/**").hasAuthority("ROLE_ADMIN")
+                        // Cualquier otro endpoint requiere autenticación
+                        .anyRequest().authenticated()
+                )
+                .formLogin(withDefaults())
+                .logout(withDefaults());
+        return http.build();
+    } */
+
+    @Bean
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+        http
+                .csrf(AbstractHttpConfigurer::disable)
+                .authorizeHttpRequests(authz -> authz
+                        // Permitir acceso a la página principal index.html y a otros archivos estáticos sin autenticación
+                        .requestMatchers("/", "/js/**").permitAll()
+                        // Dar acceso completo al ADMIN a todos los endpoints
+                        .requestMatchers("/paciente/**", "/odontologo/**", "/turno/**").hasAuthority("ROLE_ADMIN")
+                        // Permitir que el USER pueda trabajar con turnos y buscar pacientes/odontólogos
+                        .requestMatchers("/turno/**").hasAnyAuthority("ROLE_USER", "ROLE_ADMIN")
+                        .requestMatchers("/paciente/buscar/**", "/odontologo/buscar/**").hasAnyAuthority("ROLE_USER", "ROLE_ADMIN")
                         // Cualquier otro endpoint requiere autenticación
                         .anyRequest().authenticated()
                 )
